@@ -92,7 +92,7 @@ format-underline = #1db954
 type = custom/script
 interval = 2
 format = <label>
-exec = /bin/sh ~/.config/polybar/scripts/polyfreq.sh
+exec = /bin/sh ~/.config/polybar/scripts/frequency_monitor.sh
 format-underline = #f90000
 
 [module/packagetemp]
