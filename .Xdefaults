@@ -41,8 +41,8 @@ URxvt.keysym.Control-Left: \033[1;5D
 *color11: #657b83
 
 !! blue dark/light
-*color4: #268bd2
-*color12: #839496
+*color4: #006aff
+*color12: #38caff
 
 !! magenta dark/light
 *color5: #d33682
@@ -50,7 +50,7 @@ URxvt.keysym.Control-Left: \033[1;5D
 
 !! cyan dark/light
 *color6: #2aa198
-*color14: #93a1a1
+*color14: #77cccc
 
 !! white dark/light
 *color7: #eee8d5
