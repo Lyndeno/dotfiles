@@ -17,7 +17,7 @@ super + Escape
 
 # Lock the screen
 super + l
-	i3lock -c 101010 --ringcolor=f00000f0 && sleep 5 && xset s activate
+	i3lock -c 00000033 --insidecolor 00000044 --ringcolor aa0000aa -k --timecolor ffffffaa --datecolor ffffff99 --timestr "%I:%M %p"  && sleep 5 && xset s activate
 
 #
 # bspwm hotkeys
