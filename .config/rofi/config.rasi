@@ -1,4 +1,6 @@
 configuration {
+ width: 600;
+ lines: 10;
  modi: "window,drun,ssh,combi,run";
  theme: "lsblur";
  font: "Cascadia Code 12";

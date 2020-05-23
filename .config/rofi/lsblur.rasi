@@ -18,7 +18,7 @@
   mangenta:   #d886f3;
   cyan:       #6cdcf7;
   grey:       #bbbbbb;
-  emphasis:   #50536b;
+  emphasis:   #FFFFFF44;
   text:       #ffffff;
   text-alt:   #d0d0d0;
   fg:         #abb2bf;
@@ -79,6 +79,7 @@ element {
 element selected {
   background-color: @emphasis;
   text-color: @text;
+  border-radius: 10px;
 }
 
 element urgent, element selected urgent {
@@ -91,7 +92,7 @@ element active, element selected active {
 
 message {
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 10px;
   background-color: @emphasis;
   border: 1px;
   border-color: @cyan;
@@ -99,6 +100,6 @@ message {
 
 button selected {
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 20px;
   background-color: @emphasis;
 }
