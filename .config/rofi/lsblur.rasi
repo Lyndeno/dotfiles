@@ -27,7 +27,7 @@
   spacing: 0;
   background-color: transparent;
 
-  font: "Cascadia Code 12";
+  font: "Noto Sans Medium 12";
   text-color: @text;
 }
 
@@ -40,17 +40,20 @@ window {
 
 /*
 mainbox {
-  padding: 30% 30%;
+  padding: 40% 40%;
 }
 */
 
 inputbar {
   margin: 0px 0px 20px 0px;
-  children: [prompt, textbox-prompt-colon, entry, case-indicator];
+  children: [prompt, entry, case-indicator];
 }
 
 prompt {
-  text-color: @grey;
+  text-color: #ffffff;
+  background-color: #ffffff44;
+  padding: 1 5 1 5;
+  border-radius: 5px;
 }
 
 textbox-prompt-colon {
@@ -73,13 +76,13 @@ element {
   padding: 5px;
   text-color: @text-alt;
   highlight: bold #95ee8f; /* green */
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 element selected {
   background-color: @emphasis;
   text-color: @text;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 element urgent, element selected urgent {
