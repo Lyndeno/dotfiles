@@ -2,7 +2,7 @@
 
 sxhkd &
 picom --experimental-backends --config .config/picom/picom.conf &
-feh --bg-fill ~/background.jpg
+feh --bg-fill ~/.background.jpg
 polybar example &
 optimus-manager-qt &
 blueman-tray &
