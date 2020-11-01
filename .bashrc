@@ -13,5 +13,7 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 export PATH="/home/lsanche/.gem/ruby/2.7.0/bin:$PATH"
+#export _JAVA_AWT_WM_NONREPARENTING=1
+
 
 alias planner='emacs ~/Documents/University/Term\ 7\ -\ Fall\ 2020/tasks.org'

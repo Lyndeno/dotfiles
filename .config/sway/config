@@ -8,7 +8,8 @@
 exec xrandr --output XWAYLAND0 --primary
 
 ### Autostart ###
-
+exec steam-runtime %U
+exec discord --start-minimized
 
 
 
@@ -24,11 +25,13 @@ set $mod Mod4
 #set $up k
 #set $right l
 # Your preferred terminal emulator
-set $term gnome-terminal
+set $term termite
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu wofi --show drun
+
+# Launch Menu
 
 ### Output configuration
 #
@@ -95,7 +98,7 @@ workspace 9 output DP-2
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+grave exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -118,7 +121,11 @@ workspace 9 output DP-2
 ### Lock ###
     bindsym $mod+l exec swaylock -c 00000033 --inside-color 00000077 --ring-color aa0000aa --timestr "%I:%M %p" --screenshots --effect-blur 10x10 --fade-in 5 --clock --indicator --text-color aaaaaaFF
 
-
+### Brightness Controls ###
+bindsym $mod+F12 exec ddcutil --bus 5 setvcp 10 + 10
+bindsym $mod+F11 exec ddcutil --bus 5 setvcp 10 - 10
+bindsym ctrl+$mod+F12 exec ddcutil --bus 5 setvcp 10 100
+bindsym ctrl+$mod+F11 exec ddcutil --bus 5 setvcp 10 0
 
 
 #
@@ -238,6 +245,7 @@ bindsym $mod+r mode "resize"
 gaps inner 20
 #gaps outer 10
 default_border none 0
+smart_gaps on
 
 #
 # Status Bar:
