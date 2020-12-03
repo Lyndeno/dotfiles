@@ -11,14 +11,14 @@
 
 * {
   black:      #000000;
-  red:        #eb6e67;
+  red:        #dd3333;
   green:      #95ee8f;
   yellow:     #f8c456;
   blue:       #135cab;
   mangenta:   #d886f3;
   cyan:       #6cdcf7;
   grey:       #bbbbbb;
-  emphasis:   #FFFFFF44;
+  emphasis:   #FFFFFFaa;
   text:       #ffffff;
   text-alt:   #d0d0d0;
   fg:         #abb2bf;
@@ -34,8 +34,10 @@
 window {
   transparency: "real";
   fullscreen: false;
-  background-color: #303030AA;
+  background-color: #303030ee;
   padding: 25;
+  border: 2px;
+  border-color: @red;
 }
 
 /*
