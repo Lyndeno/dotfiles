@@ -1,7 +1,5 @@
-@import 'colors.css';
-
 /* Uncomment for termite*/
 VteTerminal, vte-terminal {
 	padding: 24px;
 }
-@import 'window_decorations.css';
+
