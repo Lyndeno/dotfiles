@@ -5,7 +5,7 @@
 
 # terminal emulator
 super + Return
-	termite
+	termite -e /usr/bin/fish
 
 # program launcher
 #super + @space
