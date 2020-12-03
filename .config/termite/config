@@ -1,6 +1,6 @@
 [colors]
 foreground = #ffffff
-background = rgba(25, 25, 25, 1)
+background = rgba(25, 25, 25, .95)
 
 [options]
 font = Cascadia Code 11
