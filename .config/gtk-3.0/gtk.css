@@ -4,3 +4,4 @@
 VteTerminal, vte-terminal {
 	padding: 24px;
 }
+@import 'window_decorations.css';
