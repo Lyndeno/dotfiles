@@ -244,8 +244,9 @@ bindsym $mod+r mode "resize"
 
 gaps inner 20
 #gaps outer 10
-default_border none 0
+default_border pixel 2
 smart_gaps on
+smart_borders on
 
 #
 # Status Bar:
