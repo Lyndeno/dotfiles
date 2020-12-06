@@ -18,7 +18,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 #alias planner='emacs ~/Documents/University/Term\ 7\ -\ Fall\ 2020/tasks.org'
 
-if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]
-then
-	exec fish
-fi
+#if [[ $(ps --no-header --pid=$PPID --format=cmd) != "fish" ]]
+#then
+#	exec fish
+#fi
