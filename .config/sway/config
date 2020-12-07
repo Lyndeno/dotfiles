@@ -244,6 +244,10 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+### Window Rules ###
+for_window [app_id="firefox" title="^Picture-in-Picture$"] \
+    floating enable, move position 877 450, sticky enable
+
 
 gaps inner 20
 #gaps outer 10
