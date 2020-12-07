@@ -5,12 +5,14 @@
 # Read `man 5 sway` for a complete reference.
 
 # Configure xwayland for optimal res/perf in games
-exec xrandr --output XWAYLAND0 --primary
+#exec xrandr --output XWAYLAND0 --primary
 
 ### Autostart ###
 exec steam-runtime %U
 exec discord --start-minimized
 
+# start notification daemon
+exec mako
 
 
 
@@ -25,7 +27,7 @@ set $mod Mod4
 #set $up k
 #set $right l
 # Your preferred terminal emulator
-set $term termite
+set $term termite -e fish
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -64,9 +66,9 @@ workspace 9 output DP-2
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+exec swayidle -w \
+         timeout 300 'swaylock -c 000000FF --inside-color 00000099 --ring-color aa0000aa --timestr "%I:%M %p" --fade-in 2 --clock --indicator --text-color aaaaaaFF' \
+         timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
 #          before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
@@ -119,7 +121,8 @@ workspace 9 output DP-2
     bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 ### Lock ###
-    bindsym $mod+l exec swaylock -c 00000033 --inside-color 00000077 --ring-color aa0000aa --timestr "%I:%M %p" --screenshots --effect-blur 10x10 --fade-in 5 --clock --indicator --text-color aaaaaaFF
+    bindsym $mod+l exec swaylock -c 000000FF --inside-color 00000099 --ring-color aa0000aa --timestr "%I:%M %p" --fade-in 2 --clock --indicator --text-color aaaaaaFF
+
 
 ### Brightness Controls ###
 bindsym $mod+F12 exec ddcutil --bus 5 setvcp 10 + 10
