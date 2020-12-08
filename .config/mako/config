@@ -2,5 +2,5 @@ default-timeout=10000
 font=Noto Sans 11
 border-size=3
 border-color=#aa1111ff
-background-color=#555555FF
+background-color=#191919F3
 progress-color=#999999FF
