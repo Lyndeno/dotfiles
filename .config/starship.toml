@@ -3,8 +3,11 @@ add_newline = false
 # Custom Format
 format = """
 $directory
-$jobs$username$hostname$memory_usage$git_branch$git_status$rust$character$cmake"""
+$jobs$username$hostname$memory_usage$git_branch$git_status$rust$cmake$cmd_duration$character"""
 
+[cmd_duration]
+min_time = 10000
+format = "[$duration]($style) "
 
 [hostname]
 format = "on [$hostname](bold red) "
