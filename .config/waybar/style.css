@@ -18,7 +18,7 @@
 }
 
 #workspaces {
-    padding: 0px 20px;
+    padding: 0px 25px;
 }
 
 #workspaces button {
@@ -49,8 +49,26 @@
 
 #custom-media {
     padding: 0px 10px;
-    border-radius: 5px;
+    border-radius: 12px;
     background-color: #e5a00d;
+}
+
+#custom-media.custom-firefox {
+    background-color: #FF6611;
+}
+
+#custom-media.custom-Plexamp {
+    background-color: #e5a00d;
+}
+
+#custom-media.custom-spotify {
+    background-color: #1DB954;
+}
+
+#clock {
+    background-color: #eeeeee;
+    border-radius: 12px;
+    color: #000000;
 }
 
 
