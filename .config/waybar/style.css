@@ -77,6 +77,10 @@
     margin: 0 0px;
 }
 
+#temperature.critical {
+    color: #ff0000;
+}
+
 #tray {
     padding-right: 25px;
 }
