@@ -75,8 +75,8 @@
     color: #000000;
 }
 
-#network, #idle_inhibitor, #pulseaudio, #cpu, #memory, #temperature, #tray, #clock {
-    padding: 0 10px;
+#network, #idle_inhibitor, #pulseaudio, #cpu, #memory, #temperature, #tray, #clock, #disk {
+    padding: 0 6px;
     margin: 0 0px;
 }
 
