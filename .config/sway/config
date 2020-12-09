@@ -126,14 +126,14 @@ exec swayidle -w \
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 ### Volume ###
-    bindsym XF86AudioRaiseVolume exec pactl set-sink-mute @DEFAULT_SINK@ off && pactl -- set-sink-volume @DEFAULT_SINK@ +2%
-    bindsym XF86AudioLowerVolume exec pactl set-sink-mute @DEFAULT_SINK@ off && pactl -- set-sink-volume @DEFAULT_SINK@ -2%
-    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-mute @DEFAULT_SINK@ off && pactl -- set-sink-volume @DEFAULT_SINK@ +2%
+    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-mute @DEFAULT_SINK@ off && pactl -- set-sink-volume @DEFAULT_SINK@ -2%
+    bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 ### Media ###
-    bindsym XF86AudioPlay exec playerctl play-pause
-    bindsym XF86AudioNext exec playerctl next
-    bindsym XF86AudioPrev exec playerctl previous
+    bindsym --locked XF86AudioPlay exec playerctl play-pause
+    bindsym --locked XF86AudioNext exec playerctl next
+    bindsym --locked XF86AudioPrev exec playerctl previous
 
 ### Lock ###
     bindsym $mod+l exec swaylock -c 000000FF --inside-color 00000099 --ring-color aa0000aa --timestr "%I:%M %p" --fade-in 2 --clock --indicator --text-color aaaaaaFF
