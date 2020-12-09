@@ -50,19 +50,23 @@
 #custom-media {
     padding: 0px 10px;
     border-radius: 12px;
-    background-color: #e5a00d;
+    background-color: #333333;
+    transition: all 0.5s ease-in-out;
 }
 
 #custom-media.custom-firefox {
     background-color: #FF6611;
+    transition: all 0.5s ease-in-out;
 }
 
 #custom-media.custom-Plexamp {
     background-color: #e5a00d;
+    transition: all 0.5s ease-in-out;
 }
 
 #custom-media.custom-spotify {
     background-color: #1DB954;
+    transition: all 0.5s ease-in-out;
 }
 
 #clock {
@@ -70,7 +74,6 @@
     border-radius: 12px;
     color: #000000;
 }
-
 
 #network, #idle_inhibitor, #pulseaudio, #cpu, #memory, #temperature, #tray, #clock {
     padding: 0 10px;
