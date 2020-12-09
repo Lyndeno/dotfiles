@@ -1,0 +1,41 @@
+window {
+margin: 5px;
+border: 2px solid red;
+background-color: red;
+border-radius: 6px;
+}
+
+#input {
+margin: 5px;
+border: 2px solid red;
+background-color: grey;
+}
+
+#inner-box {
+margin: 5px;
+background-color: grey;
+}
+
+#outer-box {
+margin: 5px;
+background-color: grey;
+}
+
+#scroll {
+margin: 5px;
+}
+
+#text {
+margin: 5px;
+} 
+
+#entry:selected {
+background-color: rgba(0,0,0,0);
+transition: 0.5s;
+} 
+
+#text:selected {
+background-color: rgba(0,0,0,0);
+transition: 0.5s;
+} 
+
