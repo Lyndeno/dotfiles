@@ -142,10 +142,10 @@ exec swayidle -w \
 bindsym print exec --no-startup-id slurp | grim -g - ~/Pictures/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
 
 ### Brightness Controls ###
-bindsym $mod+F12 exec ddcutil --bus 5 setvcp 10 + 10
-bindsym $mod+F11 exec ddcutil --bus 5 setvcp 10 - 10
-bindsym ctrl+$mod+F12 exec ddcutil --bus 5 setvcp 10 100
-bindsym ctrl+$mod+F11 exec ddcutil --bus 5 setvcp 10 0
+bindsym $mod+F12 exec ddcutil --model="LG QHD" --sleep-multiplier 0.1 setvcp 10 + 10 && ddcutil --model="DELL P2014H" --sleep-multiplier 0.1 setvcp 10 + 10
+bindsym $mod+F11 exec ddcutil --model="LG QHD" --sleep-multiplier 0.1 setvcp 10 - 10 && ddcutil --model="DELL P2014H" --sleep-multiplier 0.1 setvcp 10 - 10
+bindsym ctrl+$mod+F12 exec ddcutil --model="LG QHD" --sleep-multiplier 0.1 setvcp 10 100 && ddcutil --model="DELL P2014H" --sleep-multiplier 0.1 setvcp 10 100
+bindsym ctrl+$mod+F11 exec ddcutil --model="LG QHD" --sleep-multiplier 0.1 setvcp 10 0 && ddcutil --model="DELL P2014H" --sleep-multiplier 0.1 setvcp 10 0
 
 
 #
