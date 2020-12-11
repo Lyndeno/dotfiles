@@ -76,6 +76,15 @@
     color: #000000;
 }
 
+window.DP-2 #clock {
+    border-radius: 0px;
+    border-bottom-left-radius: 12px;
+}
+
+window.DP-2 #workspaces {
+    padding-left: 0px;
+}
+
 #network, #idle_inhibitor, #pulseaudio, #cpu, #memory, #temperature, #tray, #clock, #disk {
     padding: 0 6px;
     margin: 0 0px;
@@ -88,9 +97,6 @@
 #tray {
     padding-right: 25px;
 }
-
-
-
 
 @keyframes blink {
     to {
