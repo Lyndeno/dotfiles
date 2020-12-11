@@ -107,11 +107,11 @@
         "format-icons": {
             "spotify": "",
             "default": "",
-	    "Plexamp": "",
-	    "firefox": ""
+	        "Plexamp": "",
+	        "firefox": ""
         },
         "escape": true,
-	"on-click": "playerctl play-pause",
+	    "on-click": "playerctl play-pause",
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         //"exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
