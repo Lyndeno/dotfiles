@@ -1,0 +1,11 @@
+exec steam-runtime %U
+exec discord --start-minimized
+
+# start notification daemon
+exec mako
+
+# start polkit agent
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# start gammastep
+exec gammastep-indicator
