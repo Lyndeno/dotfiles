@@ -7,7 +7,7 @@ exec xrandr --output XWAYLAND0 --primary
 set $mod Mod4
 
 # Your preferred terminal emulator
-set $term termite -e fish
+set $term alacritty -e fish
 
 # Your preferred application launcher
 set $menu wofi --show drun
