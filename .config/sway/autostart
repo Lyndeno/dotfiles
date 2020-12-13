@@ -1,5 +1,5 @@
 exec steam-runtime %U
-exec discord --start-minimized
+exec discord --start-minimized --disable-frame-rate-limit
 
 # start notification daemon
 exec mako
