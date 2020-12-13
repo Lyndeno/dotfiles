@@ -1,9 +1,15 @@
-#colors
+# colors
 client.focused #aa2222 #285577 #ffffff #2e9ef4 #aa2222
 client.focused_inactive #333333 #5f676a #ffffff #484e50 #333333
 client.unfocused #333333 #222222 #888888 #292d2e #333333
 
+# windows
 gaps inner 20
 default_border pixel 3
 smart_gaps on
 smart_borders on
+
+# application themes and cursors
+exec_always gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+exec_always gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors'
+exec_always gsettings set org.gnome.desktop.interface gtk-theme 'Plata-Noir'
