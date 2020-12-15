@@ -35,7 +35,7 @@
     bindsym --locked XF86AudioPrev exec playerctl previous
 
 ### Lock ###
-    bindsym $mod+l exec swaylock -c 000000FF --inside-color 00000099 --ring-color aa0000aa --timestr "%I:%M %p" --fade-in 2 --clock --indicator --text-color aaaaaaFF
+    bindsym $mod+l exec swaylock -f -c 000000FF --inside-color 00000099 --ring-color aa0000aa --timestr "%I:%M %p" --fade-in 2 --clock --indicator --text-color aaaaaaFF
 
 # Screenshot
 bindsym print exec --no-startup-id slurp | grim -g - ~/Pictures/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
