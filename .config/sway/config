@@ -15,8 +15,8 @@ set $menu wofi --show drun
 # Output configuration
 output * bg ~/.background.jpg fill
 
-output DP-1 enable adaptive_sync on pos 900 0 mode 2560x1440@144.000000Hz
-output DP-2 enable pos 0 0 transform 90
+output DP-1 enable adaptive_sync on pos 1600 0 mode 2560x1440@144.000000Hz
+output DP-2 enable pos 0 300
 
 #Workspaces
 workspace 1 output DP-1
