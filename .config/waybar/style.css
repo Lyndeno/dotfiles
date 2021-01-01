@@ -6,6 +6,9 @@
     min-height: 24px;
 }
 
+#window {
+    padding: 0px 10px;
+}
 
 #waybar {
     background: rgba(25, 25, 25,0.95);
@@ -40,12 +43,6 @@
 
 #mode {
     background: #64727D;
-}
-
-
-#battery {
-    background-color: #ffffff;
-    color: black;
 }
 
 #custom-media {
@@ -85,7 +82,7 @@ window.DP-2 #workspaces {
     padding-left: 0px;
 }
 
-#network, #idle_inhibitor, #pulseaudio, #cpu, #memory, #temperature, #tray, #clock, #disk {
+#network, #idle_inhibitor, #pulseaudio, #cpu, #memory, #temperature, #tray, #clock, #disk, #battery {
     padding: 0 6px;
     margin: 0 0px;
 }
