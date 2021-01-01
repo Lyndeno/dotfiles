@@ -3,7 +3,7 @@ add_newline = false
 # Custom Format
 format = """
 $directory
-$jobs$username$hostname$memory_usage$git_branch$git_status$rust$cmake$cmd_duration$character"""
+$battery$jobs$username$hostname$memory_usage$git_branch$git_status$rust$cmake$cmd_duration$character"""
 
 [cmd_duration]
 min_time = 10000
@@ -25,3 +25,6 @@ format = "[$symbol$branch]($style) "
 
 [jobs]
 symbol = " "
+
+[[battery.display]]
+threshold = 30
