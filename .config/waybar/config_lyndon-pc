@@ -49,6 +49,7 @@
         "spacing": 10
     },
     "clock": {
+	"interval": 15,
         // "timezone": "America/Edmonton",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%-I:%M %p}",
@@ -135,6 +136,7 @@
     "modules-right": ["clock"],
 
     "clock": {
+	"interval": 15,
         // "timezone": "America/Edmonton",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%I%n%M}",
