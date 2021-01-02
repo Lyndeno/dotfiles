@@ -28,7 +28,7 @@ exec swayidle -w \
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 # bar
-exec_always 'if pgrep waybar; then pkill waybar; waybar -c ~/.config/waybar/config_`hostname`; fi'
+exec_always 'pkill waybar; waybar -c ~/.config/waybar/config_`hostname`'
 
 ### Includes
 
