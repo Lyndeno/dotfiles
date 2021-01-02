@@ -34,6 +34,7 @@ exec_always 'if ! pgrep waybar; then waybar -c ~/.config/waybar/config_`hostname
 
 # Bindings
 include ~/.config/sway/conf.d/bindings
+include ~/.config/sway/`hostname`.conf.d/bindings
 
 # Autostart
 include ~/.config/sway/conf.d/autostart
