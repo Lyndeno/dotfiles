@@ -25,6 +25,10 @@
     padding-right: 10px;
 }
 
+window.DP-2 #workspaces {
+    padding: 0px;
+}
+
 #workspaces button {
     padding: 0px 0px;
     background: transparent;
@@ -76,6 +80,8 @@
 window.DP-2 #clock {
     border-radius: 0px;
     border-bottom-left-radius: 12px;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 window.DP-2 #workspaces {
