@@ -49,15 +49,15 @@ exec_always 'if ! pgrep waybar; then waybar -c ~/.config/waybar/config_`hostname
 ### Includes
 
 # Bindings
-include ~/.config/sway/bindings
+include ~/.config/sway/conf.d/bindings
 
 # Autostart
-include ~/.config/sway/autostart
+include ~/.config/sway/conf.d/autostart
 
 # Appearance
-include ~/.config/sway/appearance
+include ~/.config/sway/conf.d/appearance
 
 # Windows Rules
-include ~/.config/sway/window_rules
+include ~/.config/sway/conf.d/window_rules
 
 include /etc/sway/config.d/*
