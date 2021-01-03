@@ -62,7 +62,7 @@
     },
     "cpu": {
         "format": " {usage}%",
-        "tooltip": false,
+        "tooltip": true,
 	"interval": 3
     },
     "memory": {

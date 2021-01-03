@@ -57,7 +57,7 @@
     },
     "cpu": {
         "format": " {usage}%",
-        "tooltip": false,
+        "tooltip": true,
 	"interval": 3
     },
     "memory": {
@@ -85,6 +85,7 @@
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}   {bandwidthDownBits}  {bandwidthUpBits}",
+        "tooltip-format-ethernet": "Address: {ipaddr}\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}",
 	"interval": 2
     },
     "pulseaudio": {
