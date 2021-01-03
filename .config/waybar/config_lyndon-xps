@@ -90,6 +90,7 @@
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}   {bandwidthDownBits}  {bandwidthUpBits}",
+	"tooltip-format-wifi": "Address: {ipaddr}\nBand {frequency} MHz\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}\nStrength: {signalStrength}%",
 	"interval": 2
     },
     "pulseaudio": {
