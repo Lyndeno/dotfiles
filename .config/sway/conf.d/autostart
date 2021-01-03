@@ -1,6 +1,9 @@
 exec steam-runtime %U
 exec discord --start-minimized --disable-frame-rate-limit
 
+# Show volume when adjusted
+exec volnoti-dbus
+
 # start notification daemon
 exec mako
 
