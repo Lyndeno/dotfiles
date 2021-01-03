@@ -7,7 +7,7 @@ set $mod Mod4
 set $term alacritty -e fish
 
 # Your preferred application launcher
-set $menu wofi --show drun
+set $menu wofi
 
 # Output configuration
 output * bg ~/.background.jpg fill
