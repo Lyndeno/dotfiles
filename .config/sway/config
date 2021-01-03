@@ -16,16 +16,7 @@ output * bg ~/.background.jpg fill
 include ~/.config/sway/`hostname`.conf.d/devices
 
 # Idle configuration
-
-exec swayidle -w \
-         timeout 300 ~/.config/sway/scripts/lock.sh \
-         timeout 310 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-	 timeout 10 'if pgrep swaylock; then swaymsg "output * dpms off"; fi' resume 'swaymsg "output * dpms on"'
-#          before-sleep ~/.config/sway/scripts/lock.sh
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+include ~/.config/sway/`hostname`.conf.d/idle
 
 # bar
 exec_always 'pkill waybar; waybar -c ~/.config/waybar/config_`hostname`'
