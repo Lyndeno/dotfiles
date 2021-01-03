@@ -1,3 +1,4 @@
 exec swayidle -w \
          timeout 300 ~/.config/sway/scripts/lock.sh \
+	 timeout 310 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
          timeout 10 'if pgrep swaylock; then swaymsg "output * dpms off"; fi' resume 'swaymsg "output * dpms on"'
