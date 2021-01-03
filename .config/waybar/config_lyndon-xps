@@ -24,6 +24,15 @@
     //         "default": ""
     //     }
     // },
+    "battery": {
+        "interval": 30,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": ["","","","",""]
+    }
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
@@ -64,7 +73,7 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{icon} {temperatureC}°C",
-        "format-icons": ["", "", ""],
+        "format-icons": ["", "", ""],
 	"interval": 3
     },
     "backlight": {
