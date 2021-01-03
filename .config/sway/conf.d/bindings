@@ -35,7 +35,7 @@
     bindsym --locked XF86AudioPrev exec playerctl previous
 
 ### Lock ###
-    bindsym $mod+l exec ~/.config/sway/scripts/lock.sh
+    bindsym $mod+l exec swaylock
 
 # Screenshot
 bindsym print exec --no-startup-id slurp | grim -g - ~/Pictures/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
