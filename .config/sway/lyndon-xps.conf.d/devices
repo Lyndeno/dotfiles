@@ -16,4 +16,5 @@ workspace 9 output eDP-1
 input type:touchpad {
 	tap enabled
 	natural_scroll enabled
+	scroll_factor 0.2
 }
