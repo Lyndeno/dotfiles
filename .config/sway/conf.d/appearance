@@ -4,7 +4,7 @@ client.focused_inactive #333333 #5f676a #ffffff #484e50 #333333
 client.unfocused #333333 #222222 #888888 #292d2e #333333
 
 # windows
-gaps inner 20
+gaps inner $default_gap
 default_border pixel 3
 smart_gaps on
 smart_borders on
