@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media", "sway/window"],
     //"modules-center": ["sway/window"],
-    "modules-right": ["pulseaudio", "custom/separator", "network",  "custom/separator", "cpu",  "custom/separator", "memory",  "custom/separator", "disk", "custom/separator", "temperature", "custom/separator", "battery", "clock", "idle_inhibitor", "tray"],
+    "modules-right": ["pulseaudio", "custom/separator", "network",  "custom/separator", "cpu",  "custom/separator", "memory",  "custom/separator", "disk", "custom/separator", "temperature", "custom/separator", "battery","custom/separator", "backlight", "clock", "idle_inhibitor", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -79,9 +79,9 @@
 	    "interval": 3
     },
     "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", ""]
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", ""]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
