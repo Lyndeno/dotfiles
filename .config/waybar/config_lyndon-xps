@@ -32,7 +32,7 @@
         },
         "format": "{icon} {capacity}%",
         "format-icons": ["","","","",""]
-    }
+    },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
@@ -74,7 +74,7 @@
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["", "", ""],
-	"interval": 3
+	    "interval": 3
     },
     "backlight": {
         // "device": "acpi_video1",
