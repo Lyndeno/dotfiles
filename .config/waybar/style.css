@@ -10,6 +10,10 @@
     padding: 0px 10px;
 }
 
+window.DP-2 #window {
+    padding: 0px;
+}
+
 #waybar {
     background: rgba(25, 25, 25,0.95);
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */

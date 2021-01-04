@@ -135,7 +135,9 @@
     "modules-left": ["sway/workspaces"],
     "modules-center": ["sway/window"],
     "modules-right": ["clock"],
-
+    "sway/window": {
+	"rotate": 90
+    },
     "clock": {
 	"interval": 15,
         // "timezone": "America/Edmonton",
