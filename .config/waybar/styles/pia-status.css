@@ -1,3 +1,7 @@
+#custom-pia-status {
+    transition: all 0.5s ease-in-out;
+}
+
 #custom-pia-status.Connected {
     color: #00ff00;
 }
