@@ -134,13 +134,13 @@
     },
     "custom/checkupdate": {
 	"format": " {}",
-	"interval": 600,
+	"interval": 60,
 	"exec": "~/.config/waybar/scripts/checkupdates.sh",
     "exec-if": "exit 0"
     },
     "custom/pia-status": {
         "format": "{icon} {}",
-        "interval": 2,
+        "interval": 3,
         "return-type": "json",
         "exec": "~/.config/waybar/scripts/pia-status.sh",
         "format-icons": {
