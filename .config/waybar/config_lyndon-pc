@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["pulseaudio", "custom/separator", "network",  "custom/separator", "cpu",  "custom/separator", "memory",  "custom/separator", "custom/checkupdate", "custom/vpnstatus", "disk", "disk#mirror", "custom/separator", "temperature", "clock", "idle_inhibitor", "tray"],
+    "modules-right": ["pulseaudio", "custom/separator", "network",  "custom/separator", "cpu",  "custom/separator", "memory",  "custom/separator", "custom/checkupdate", "custom/pia-status", "disk", "disk#mirror", "custom/separator", "temperature", "clock", "idle_inhibitor", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -133,9 +133,11 @@
 	"exec": "~/.config/waybar/scripts/checkupdates.sh",
     "exec-if": "exit 0"
     },
-    "custom/vpnstatus": {
-        "format": "VPN: {}",
-        "exec": "piactl monitor connectionstate"
+    "custom/pia-status": {
+        "format": "嬨 {}",
+        "interval": 1,
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/pia-status.sh"
     }
 },
 {
