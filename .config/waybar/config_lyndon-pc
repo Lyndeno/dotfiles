@@ -134,10 +134,21 @@
     "exec-if": "exit 0"
     },
     "custom/pia-status": {
-        "format": "嬨 {}",
-        "interval": 1,
+        "format": "{icon} {}",
+        "interval": 2,
         "return-type": "json",
-        "exec": "~/.config/waybar/scripts/pia-status.sh"
+        "exec": "~/.config/waybar/scripts/pia-status.sh",
+        "format-icons": {
+            "Connected": "",
+            "Disconnected": "",
+            "Connecting": "",
+            "Disconnecting": "",
+            "Reconnecting": "",
+            "Interrupted": "",
+            "DisconnectingToReconnect": ""
+        },
+        "on-click": "piactl connect &",
+        "on-click-right": "piactl disconnect &"
     }
 },
 {
