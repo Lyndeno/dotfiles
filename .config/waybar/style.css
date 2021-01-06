@@ -61,6 +61,18 @@
     border-color: #ffffff;
 }
 
+#cpu {
+    color: #79ff79
+}
+
+#memory {
+    color: #ff7b7b
+}
+
+#temperature {
+    color: #7cc0ff
+}
+
 #temperature.critical {
     color: #ff0000;
 }
