@@ -77,6 +77,10 @@
     color: #ff0000;
 }
 
+#custom-checkupdate {
+    color: #ffa600
+}
+
 @keyframes blink {
     to {
         background-color: #ffffff;
