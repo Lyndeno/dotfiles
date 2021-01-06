@@ -52,11 +52,13 @@
 }
 
 #clock {
-    background-color: #eeeeee;
-    border-radius: 12px;
-    color: #000000;
     padding: 0px 5px;
     margin: 0px 5px;
+
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ffffff;
 }
 
 #temperature.critical {
@@ -84,11 +86,11 @@ window.DP-2 #workspaces {
 }
 
 window.DP-2 #clock {
-    border-radius: 0px;
-    border-bottom-left-radius: 12px;
     background-color: transparent;
     color: #ffffff;
     padding: 0px;
+
+    border-style: none;
 }
 
 window.DP-2 #workspaces {
