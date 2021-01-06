@@ -7,37 +7,32 @@
     font-family: NotoSans Nerd Font,Arial, Helvetica, sans-serif;
     font-size: 16px;
     min-height: 24px;
+    padding: 0px 1px;
+    color: white;
 }
 
-#window {
-    padding: 0px 10px;
+.modules-left {
+    padding-left: 20px;
 }
 
-window.DP-2 #window {
-    padding: 0px;
+.modules-right {
+    padding-right: 20px;
 }
 
 #waybar {
     background: rgba(25, 25, 25,0.95);
-    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
-    color: white;
-    /*border-bottom-left-radius: 24px;*/
-    /*border-bottom-right-radius: 24px;*/
-    padding-left: 20px;
-    padding-right: 20px;
+}
+
+#custom-separator {
+    padding: 0px 0px;
 }
 
 #workspaces {
-    padding-left: 25px;
     padding-right: 10px;
 }
 
-window.DP-2 #workspaces {
-    padding: 0px;
-}
-
 #workspaces button {
-    padding: 0px 0px;
+    margin: 0px 4px;
     background: transparent;
     color: white;
     min-width: 25px;
@@ -60,30 +55,12 @@ window.DP-2 #workspaces {
     background-color: #eeeeee;
     border-radius: 12px;
     color: #000000;
-}
-
-window.DP-2 #clock {
-    border-radius: 0px;
-    border-bottom-left-radius: 12px;
-    background-color: transparent;
-    color: #ffffff;
-}
-
-window.DP-2 #workspaces {
-    padding-left: 0px;
-}
-
-#network, #idle_inhibitor, #pulseaudio, #cpu, #memory, #temperature, #tray, #clock, #disk, #battery, #backlight {
-    padding: 0 6px;
-    margin: 0 0px;
+    padding: 0px 5px;
+    margin: 0px 5px;
 }
 
 #temperature.critical {
     color: #ff0000;
-}
-
-#tray {
-    padding-right: 25px;
 }
 
 @keyframes blink {
@@ -93,4 +70,27 @@ window.DP-2 #workspaces {
     }
 }
 
+/* Secondary monitor specific options*/
+window.DP-2 * {
+    padding: 0;
+}
 
+window.DP-2 #window {
+    padding: 0px;
+}
+
+window.DP-2 #workspaces {
+    padding: 0px;
+}
+
+window.DP-2 #clock {
+    border-radius: 0px;
+    border-bottom-left-radius: 12px;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0px;
+}
+
+window.DP-2 #workspaces {
+    padding-left: 0px;
+}
