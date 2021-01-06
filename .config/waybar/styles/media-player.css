@@ -10,15 +10,12 @@
 
 #custom-media.custom-firefox {
     border-color: #FF6611;
-    transition: all 0.5s ease-in-out;
 }
 
 #custom-media.custom-Plexamp {
     border-color: #e5a00d;
-    transition: all 0.5s ease-in-out;
 }
 
 #custom-media.custom-spotify {
     border-color: #1DB954;
-    transition: all 0.5s ease-in-out;
 }
