@@ -131,6 +131,29 @@
 	"format": "",
 	"interval": "once",
 	"tooltip": false
+    },
+    "custom/checkupdate": {
+	"format": " {}",
+	"interval": 600,
+	"exec": "~/.config/waybar/scripts/checkupdates.sh",
+    "exec-if": "exit 0"
+    },
+    "custom/pia-status": {
+        "format": "{icon} {}",
+        "interval": 2,
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/pia-status.sh",
+        "format-icons": {
+            "Connected": "",
+            "Disconnected": "",
+            "Connecting": "",
+            "Disconnecting": "",
+            "Reconnecting": "",
+            "Interrupted": "",
+            "DisconnectingToReconnect": ""
+        },
+        "on-click": "piactl connect &",
+        "on-click-right": "piactl disconnect &"
     }
 }
 ]
