@@ -1,3 +1,6 @@
+@import "styles/pia-status.css";
+@import "styles/media-player.css";
+
 * {
     border: none;
     border-radius: 0;
@@ -51,44 +54,6 @@ window.DP-2 #workspaces {
 
 #mode {
     background: #64727D;
-}
-
-#custom-media {
-    padding: 0px 10px;
-    border-radius: 12px;
-    background-color: #333333;
-    transition: all 0.5s ease-in-out;
-}
-
-#custom-media.custom-firefox {
-    background-color: #FF6611;
-    transition: all 0.5s ease-in-out;
-}
-
-#custom-media.custom-Plexamp {
-    background-color: #e5a00d;
-    transition: all 0.5s ease-in-out;
-}
-
-#custom-media.custom-spotify {
-    background-color: #1DB954;
-    transition: all 0.5s ease-in-out;
-}
-
-#custom-pia-status.Connected {
-    color: #00ff00;
-}
-
-#custom-pia-status.Disconnected {
-    color: #aaaaaa;
-}
-
-#custom-pia-status.Interrupted {
-    color: #ff0000;
-}
-
-#custom-pia-status.Connecting, #custom-pia-status.Disconnecting, #custom-pia-status.Reconnecting, #custom-pia-status.DisconnectingToReconnect {
-    color: yellow;
 }
 
 #clock {

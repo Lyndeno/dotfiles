@@ -1,0 +1,15 @@
+#custom-pia-status.Connected {
+    color: #00ff00;
+}
+
+#custom-pia-status.Disconnected {
+    color: #aaaaaa;
+}
+
+#custom-pia-status.Interrupted {
+    color: #ff0000;
+}
+
+#custom-pia-status.Connecting, #custom-pia-status.Disconnecting, #custom-pia-status.Reconnecting, #custom-pia-status.DisconnectingToReconnect {
+    color: yellow;
+}
