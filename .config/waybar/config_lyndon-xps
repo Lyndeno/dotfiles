@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media", "sway/window"],
     //"modules-center": ["sway/window"],
-    "modules-right": ["pulseaudio", "custom/separator", "network",  "custom/separator", "cpu",  "custom/separator", "memory",  "custom/separator", "disk", "custom/separator", "temperature", "custom/separator", "battery","custom/separator", "backlight", "clock", "idle_inhibitor", "tray"],
+    "modules-right": ["disk", "custom/separator","cpu", "memory", "temperature", "custom/separator", "network", "custom/pia-status", "custom/separator", "battery", "backlight", "clock", "custom/checkupdate", "pulseaudio", "idle_inhibitor", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
