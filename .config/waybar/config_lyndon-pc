@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["disk", "disk#mirror", "custom/separator","cpu", "memory", "temperature", "custom/separator", "network", "custom/pia-status", "clock", "custom/checkupdate", "pulseaudio", "idle_inhibitor", "tray"],
+    "modules-right": ["disk", "disk#mirror", "custom/separator", "custom/gamemode","cpu", "memory", "temperature", "custom/separator", "network", "custom/pia-status", "clock", "custom/checkupdate", "pulseaudio", "idle_inhibitor", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -149,6 +149,12 @@
         },
         "on-click": "piactl connect &",
         "on-click-right": "piactl disconnect &"
+    },
+    "custom/gamemode": {
+        "format": " {}",
+        "interval": 1,
+        "exec": "~/.config/waybar/scripts/gamemode-status.sh",
+        "exec-if": "exit 0"
     }
 },
 {
