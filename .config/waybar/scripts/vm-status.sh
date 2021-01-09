@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-vm_state=$(virsh --connect qemu:///system domstate Windows10)
+vm_state=$(virsh --connect qemu:///system domstate $1)
 
 if [ "$vm_state" == "shut off" ]
 then

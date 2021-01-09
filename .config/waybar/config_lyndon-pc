@@ -159,7 +159,7 @@
     "custom/windows-status": {
         "format": " {}",
         "interval": 1,
-        "exec": "~/.config/waybar/scripts/windows-status.sh",
+        "exec": "~/.config/waybar/scripts/vm-status.sh Windows10",
         "exec-if": "exit 0"
     }
 },
