@@ -1,4 +1,4 @@
-exec steam-runtime %U
+exec steam -silent 
 exec discord --start-minimized --disable-frame-rate-limit
 
 # Show volume when adjusted
