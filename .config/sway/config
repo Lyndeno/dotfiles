@@ -11,7 +11,7 @@ set $term alacritty -e fish
 set $menu wofi
 
 # Output configuration
-output * bg ~/.background.jpg fill
+output * bg ~/.wallpapers/lake_louise.jpg fill
 
 # Devices
 include ~/.config/sway/`hostname`.conf.d/devices
