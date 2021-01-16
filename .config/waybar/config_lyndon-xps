@@ -134,7 +134,7 @@
     },
     "custom/checkupdate": {
 	"format": " {}",
-	"interval": 60,
+	"interval": 1800,
 	"exec": "~/.config/waybar/scripts/checkupdates.sh",
     "exec-if": "exit 0"
     },
