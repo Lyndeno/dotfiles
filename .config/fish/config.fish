@@ -1,3 +1,7 @@
+# aliases
+alias sys='systemctl'
+alias ssys='sudo systemctl'
+
 function code
 	/bin/code $argv --disable-frame-rate-limit
 end
