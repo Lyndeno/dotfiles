@@ -132,9 +132,10 @@
     },
     "custom/checkupdate": {
 	"format": " {}",
-	"interval": 1800,
+	"interval": 3600,
 	"exec": "~/.config/waybar/scripts/checkupdates.sh",
-    "exec-if": "exit 0"
+    "exec-if": "exit 0",
+	"signal": 1
     },
     "custom/pia-status": {
         "format": "{icon} {}",
