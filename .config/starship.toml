@@ -10,7 +10,7 @@ min_time = 10000
 format = "[$duration]($style) "
 
 [hostname]
-format = "on [$hostname](bold red) "
+format = "on [$hostname](bold yellow) "
 
 [directory]
 truncation_symbol = ".../"
@@ -28,3 +28,7 @@ symbol = " "
 
 [[battery.display]]
 threshold = 30
+
+[username]
+format = "[$user]($style) "
+style_user = "bold green"
