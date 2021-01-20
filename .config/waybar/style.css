@@ -81,6 +81,14 @@
     color: #7cc0ff
 }
 
+#battery.warning {
+	color: yellow;
+}
+
+#battery.critical {
+	color: red;
+}
+
 #temperature.critical {
     color: #ff0000;
 }
