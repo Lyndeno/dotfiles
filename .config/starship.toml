@@ -39,7 +39,7 @@ style = "bold yellow"
 
 [[battery.display]]
 threshold = 50
-style = "fg:#555555"
+style = "fg:#666666"
 
 [username]
 format = "[$user]($style) "
