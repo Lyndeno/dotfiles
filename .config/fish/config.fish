@@ -10,5 +10,8 @@ function paru
 	/bin/paru $argv ; pkill -RTMIN+1 waybar
 end
 
+# other stuff
+export GPG_TTY=(tty)
+
 # goes at end
 starship init fish | source
