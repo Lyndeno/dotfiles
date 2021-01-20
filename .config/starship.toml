@@ -26,8 +26,20 @@ format = "[$symbol$branch]($style) "
 [jobs]
 symbol = " "
 
+[battery]
+format = "[$symbol $percentage]($style) "
+
+[[battery.display]]
+threshold = 15
+style = "bold red"
+
 [[battery.display]]
 threshold = 30
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 50
+style = "fg:666666"
 
 [username]
 format = "[$user]($style) "
