@@ -62,7 +62,7 @@
 	"on-click": "alacritty -e btm --default_widget_type cpu"
     },
     "memory": {
-        "format": " {used:0.1f}/{total:0.1f} GiB",
+        "format": " {used:0.1f}G ({percentage}%)",
 	"interval": 3,
     "on-click": "alacritty -e btm --default_widget_type mem"
     },
