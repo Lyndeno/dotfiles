@@ -37,12 +37,22 @@
     "disk": {
 	"interval": 30,
 	"format": " {percentage_used}%",
-	"path": "/"
+	"path": "/",
+    "states": {
+        "warning": 80,
+        "high": 90,
+        "critical": 95
+    }
     },
     "disk#mirror": {
 	"interval": 30,
 	"format": "力 {percentage_used}%",
-	"path": "/data/mirror/"
+	"path": "/data/mirror/",
+    "states": {
+        "warning": 80,
+        "high": 90,
+        "critical": 95
+    }
     },
     "tray": {
         "icon-size": 18,

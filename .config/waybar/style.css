@@ -89,6 +89,18 @@
 	color: red;
 }
 
+#disk.warning, #disk.mirror.warning {
+    color: yellow;
+}
+
+#disk.high, #disk.mirror.high {
+    color: orange;
+}
+
+#disk.critical, #disk.mirror.critical {
+    color: red;
+}
+
 #temperature.critical {
     color: #ff0000;
 }
