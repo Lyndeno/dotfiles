@@ -36,12 +36,12 @@
     },
     "disk": {
 	"interval": 30,
-	"format": " {free}",
+	"format": " {percentage_used}%",
 	"path": "/"
     },
     "disk#mirror": {
 	"interval": 30,
-	"format": "力 {free} free",
+	"format": "力 {percentage_used}%",
 	"path": "/data/mirror/"
     },
     "tray": {

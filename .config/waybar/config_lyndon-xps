@@ -47,7 +47,7 @@
     },
     "disk": {
 	"interval": 30,
-	"format": " {free} free",
+	"format": " {percentage_used}%",
 	"path": "/"
     },
     "tray": {
