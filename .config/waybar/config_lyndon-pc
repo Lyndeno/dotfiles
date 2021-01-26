@@ -132,7 +132,7 @@
         },
         "escape": true,
 	    "on-click": "playerctl play-pause",
-        "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
+        "exec": "~/.local/bin/statusbar/sb-media.py 2> /dev/null" // Script in resources folder
         //"exec": "$HOME/.config/waybar/scripts/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/separator": {
@@ -143,14 +143,14 @@
     "custom/checkupdate": {
 	"format": " {}",
 	"interval": 7200,
-	"exec": "~/.config/waybar/scripts/checkupdates.sh",
+	"exec": "~/.local/bin/statusbar/sb-updates.sh",
     "exec-if": "exit 0",
 	"signal": 1
     },
     "custom/checkdots": {
         "format": " {}",
         "interval": 7210,
-        "exec": "~/.config/waybar/scripts/checkdots.sh",
+        "exec": "~/.local/bin/statusbar/sb-dots.sh",
         "exec-if": "exit 0",
         "signal": 2
     },
@@ -158,7 +158,7 @@
         "format": "{icon} {}",
         "interval": 3,
         "return-type": "json",
-        "exec": "~/.config/waybar/scripts/pia-status.sh",
+        "exec": "~/.local/bin/statusbar/sb-pia.sh",
         "format-icons": {
             "Connected": "",
             "Disconnected": "",
@@ -174,13 +174,13 @@
     "custom/gamemode": {
         "format": " {}",
         "interval": 1,
-        "exec": "~/.config/waybar/scripts/gamemode-status.sh",
+        "exec": "~/.local/bin/statusbar/sb-gamemode.sh",
         "exec-if": "exit 0"
     },
     "custom/windows-status": {
         "format": " {}",
         "interval": 1,
-        "exec": "~/.config/waybar/scripts/vm-status.sh Windows10",
+        "exec": "~/.local/bin/statusbar/sb-vm.sh Windows10",
         "exec-if": "exit 0"
     }
 },
@@ -200,21 +200,6 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%I%n%M}",
         "format-alt": "{:%Y-%m-%d}"
-    },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 60,
-        "format-icons": {
-            "spotify": "",
-            "default": "",
-                "Plexamp": "",
-                "firefox": ""
-        },
-        "escape": true,
-            "on-click": "playerctl play-pause",
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        //"exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
 }
 ]
