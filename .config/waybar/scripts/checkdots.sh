@@ -2,7 +2,7 @@
 notify_title=" Dotfiles"
 notify-send "$notify_title" "Checking for updates..."
 yadm fetch
-no_updates=$(yadm status -s | wc -l)
+no_updates=$(yadm diff --stat origin/master | sed '$d' | wc -l)
 
 if (("$no_updates" == "0"))
 then
