@@ -85,13 +85,13 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": " {essid}",
+        "format-wifi": "",
         "format-ethernet": "  {bandwidthDownBits}",
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}   {bandwidthDownBits}  {bandwidthUpBits}",
-	"tooltip-format-wifi": "Address: {ipaddr}\nBand {frequency} MHz\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}\nStrength: {signalStrength}%",
-	"interval": 2
+        "tooltip-format-wifi": "SSID: {essid}\nAddress: {ipaddr}\nBand {frequency} MHz\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}\nStrength: {signalStrength}%",
+        "interval": 2
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
