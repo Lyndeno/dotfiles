@@ -5,3 +5,5 @@ border-color=#aa1111ff
 background-color=#191919F3
 progress-color=#999999FF
 layer=overlay
+border-radius=5
+group-by=summary
