@@ -97,6 +97,10 @@
     color: #ffa600
 }
 
+#custom-checkdots {
+    color: #00c3ff
+}
+
 @keyframes blink {
     to {
         background-color: #ffffff;
