@@ -2,7 +2,7 @@
 
 These are my personal dotfiles for my laptop and desktop. These dotfiles are configured for a system running Arch Linux.
 
-## Software Software (to be completed)
+## Software Setup (WIP)
 
 ### Install this first
 
@@ -10,8 +10,6 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 - [yadm](https://aur.archlinux.org/packages/yadm/)<sup>AUR</sup>
 
 ### General
-
-#### Required
 
 - [libnotify](https://archlinux.org/packages/?name=libnotify)
 - [piavpn-bin](https://aur.archlinux.org/packages/piavpn-bin/)<sup>AUR</sup>
@@ -28,22 +26,15 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 
 ### Terminal
 
-#### Required
-
 - [alacritty](https://archlinux.org/packages/community/x86_64/alacritty/)
 - [fish](https://archlinux.org/packages/community/x86_64/fish/)
   - [starship](https://aur.archlinux.org/packages/starship/)<sup>AUR</sup>
 - [exa](https://archlinux.org/packages/community/x86_64/exa/)
 - [bat](https://archlinux.org/packages/community/x86_64/bat/)
-
-#### Useful
-
 - [pueue](https://aur.archlinux.org/packages/pueue/)<sup>AUR</sup>
 - [bottom](https://aur.archlinux.org/packages/bottom/)<sup>AUR</sup>
 
 ### VM Stuff
-
-#### Required
 
 - [libvirt](https://archlinux.org/packages/community/x86_64/libvirt/)
 - [ebtables](https://archlinux.org/packages/extra/x86_64/ebtables/)
@@ -52,8 +43,6 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 - [edk2-ovmf](https://archlinux.org/packages/extra/any/edk2-ovmf/)
 
 ### Wayland Session
-
-#### Required
 
 - [sway](https://archlinux.org/packages/community/x86_64/sway/)
 - [mako](https://archlinux.org/packages/community/x86_64/mako/)
@@ -64,8 +53,6 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 - [xdg-desktop-portal-wlr](https://archlinux.org/packages/community/x86_64/xdg-desktop-portal-wlr/)
 
 ### Xorg Session (If desired)
-
-#### Required
 
 - [bspwm](https://archlinux.org/packages/community/x86_64/bspwm/)
 - [dunst](https://archlinux.org/packages/community/x86_64/dunst/)
