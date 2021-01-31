@@ -2,6 +2,7 @@
 alias sys='systemctl'
 alias ssys='sudo systemctl'
 alias cat='bat'
+alias ls='exa --icons --group-directories-first -B'
 
 function code
 	/bin/code $argv --disable-frame-rate-limit
