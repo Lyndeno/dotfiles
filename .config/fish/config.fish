@@ -1,6 +1,7 @@
 # aliases
 alias sys='systemctl'
 alias ssys='sudo systemctl'
+alias cat='bat'
 
 function code
 	/bin/code $argv --disable-frame-rate-limit
