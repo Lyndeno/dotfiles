@@ -1,6 +1,6 @@
 exec steam -silent 
 exec discord --start-minimized --disable-frame-rate-limit
-exec element-desktop --hidden --no-framerate-limit
+exec element-desktop --hidden --disable-framerate-limit
 
 # Show volume when adjusted
 exec volnoti-dbus
