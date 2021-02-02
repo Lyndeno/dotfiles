@@ -1,9 +1,10 @@
+# Start geoclue
+exec /usr/lib/geoclue-2.0/demos/agent
+
+# Autostart desktop programs
 exec steam -silent 
 exec discord --start-minimized --disable-frame-rate-limit
 exec element-desktop --hidden --disable-framerate-limit
-
-# Show volume when adjusted
-exec volnoti-dbus
 
 # start notification daemon
 exec mako
