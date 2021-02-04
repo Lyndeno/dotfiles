@@ -43,7 +43,7 @@
     bindsym $mod+l exec swaylock
 
 # Screenshot
-bindsym print exec --no-startup-id slurp | grim -g - ~/Pictures/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
+bindsym print exec --no-startup-id slurp | grim -g - - | wl-copy && wl-paste > ~/Pictures/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
 
 #
 # Moving around:
