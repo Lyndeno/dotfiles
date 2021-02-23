@@ -1,0 +1,4 @@
+# Autostart desktop programs
+exec steam -silent
+exec discord --start-minimized --disable-frame-rate-limit
+exec element-desktop --hidden --disable-frame-rate-limit

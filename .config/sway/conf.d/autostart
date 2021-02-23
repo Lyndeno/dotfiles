@@ -2,9 +2,9 @@
 exec /usr/lib/geoclue-2.0/demos/agent
 
 # Autostart desktop programs
-exec steam -silent 
-exec discord --start-minimized --disable-frame-rate-limit
-exec element-desktop --hidden --disable-frame-rate-limit
+#exec steam -silent 
+#exec discord --start-minimized --disable-frame-rate-limit
+#exec element-desktop --hidden --disable-frame-rate-limit
 
 # start notification daemon
 exec mako
