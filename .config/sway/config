@@ -30,6 +30,7 @@ include ~/.config/sway/`hostname`.conf.d/bindings
 
 # Autostart
 include ~/.config/sway/conf.d/autostart
+include ~/.config/sway/`hostname`.conf.d/autostart
 
 # Appearance
 include ~/.config/sway/conf.d/appearance
