@@ -44,6 +44,7 @@
 
 # Screenshot
 bindsym print exec --no-startup-id slurp | grim -g - - | wl-copy && wl-paste > ~/Pictures/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
+bindsym $mod+print exec --no-startup-id grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy && wl-paste > ~/Pictures/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
 
 #
 # Moving around:
