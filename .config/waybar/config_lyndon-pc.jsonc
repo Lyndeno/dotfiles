@@ -36,7 +36,7 @@
     },
     "disk#root": {
 	"interval": 30,
-	"format": " {percentage_used}%",
+	"format": " {percentage_free}%",
 	"path": "/",
     "states": {
         "warning": 80,
@@ -46,7 +46,7 @@
     },
     "disk#mirror": {
 	"interval": 30,
-	"format": "力 {percentage_used}%",
+	"format": "力 {percentage_free}%",
 	"path": "/data/mirror/",
     "states": {
         "warning": 80,
