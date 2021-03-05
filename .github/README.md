@@ -34,7 +34,7 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
   - [starship](https://archlinux.org/packages/community/x86_64/starship/)
 - [exa](https://archlinux.org/packages/community/x86_64/exa/)
 - [bat](https://archlinux.org/packages/community/x86_64/bat/)
-- [pueue](https://aur.archlinux.org/packages/pueue/)<sup>AUR</sup>
+- [pueue](https://archlinux.org/packages/community/x86_64/pueue/)
 - [bottom](https://aur.archlinux.org/packages/bottom/)<sup>AUR</sup>
 
 ### VM Stuff
