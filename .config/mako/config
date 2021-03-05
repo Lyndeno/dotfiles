@@ -1,5 +1,5 @@
 default-timeout=10000
-font=Noto Sans 11
+font=Cascadia Code 12, Symbols Nerd Font 12
 border-size=3
 border-color=#aa1111ff
 background-color=#191919F3
