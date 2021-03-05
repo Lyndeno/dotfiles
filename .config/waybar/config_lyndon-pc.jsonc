@@ -155,18 +155,18 @@
         "signal": 2
     },
     "custom/pia-status": {
-        "format": "{icon} {}",
+        "format": "{icon}{}",
         "interval": 3,
         "return-type": "json",
         "exec": "~/.local/bin/statusbar/sb-pia.sh",
         "format-icons": {
-            "Connected": "",
+            "Connected": " ",
             "Disconnected": "",
-            "Connecting": "",
-            "Disconnecting": "",
-            "Reconnecting": "",
-            "Interrupted": "",
-            "DisconnectingToReconnect": ""
+            "Connecting": " ",
+            "Disconnecting": " ",
+            "Reconnecting": " ",
+            "Interrupted": " ",
+            "DisconnectingToReconnect": " "
         },
         "on-click": "piactl connect &",
         "on-click-right": "piactl disconnect &"
