@@ -58,10 +58,4 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 
 ### Xorg Session (If desired)
 
-- [bspwm](https://archlinux.org/packages/community/x86_64/bspwm/)
-- [dunst](https://archlinux.org/packages/community/x86_64/dunst/)
-- [picom](https://archlinux.org/packages/community/x86_64/picom/)
-- [polybar](https://aur.archlinux.org/packages/polybar/)<sup>AUR</sup>
-- [rofi](https://archlinux.org/packages/community/x86_64/rofi/)
-- [sxhkd](https://archlinux.org/packages/community/x86_64/sxhkd/)
-- [xdg-desktop-portal-gtk](https://archlinux.org/packages/extra/x86_64/xdg-desktop-portal-gtk/)
+Will add bare minimum i3 stuff here as I figure it out
