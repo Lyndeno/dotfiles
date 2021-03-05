@@ -20,7 +20,7 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 - [pipewire](https://archlinux.org/packages/extra/x86_64/pipewire/)
   - [pipewire-pulse](https://archlinux.org/packages/extra/x86_64/pipewire-pulse/)
 - [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin)<sup>AUR</sup>
-- [inetutils](https://archlinux.org/packages/core/x86_64/inetutils/) **IMPORTANT**: Needed for programs like Sway to choose the right config file based on the host.
+- [inetutils](https://archlinux.org/packages/core/x86_64/inetutils/) **IMPORTANT**: Needed for programs like Sway to choose the right config file based on the host. Might be able to remove and just cat ```/etc/hostname``` instead.
 - [pacman-contrib](https://archlinux.org/packages/community/x86_64/pacman-contrib/)
 - [discord](https://archlinux.org/packages/community/x86_64/discord/)
 - [element-desktop](https://archlinux.org/packages/community/x86_64/element-desktop/)
