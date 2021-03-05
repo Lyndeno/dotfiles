@@ -8,78 +8,129 @@
     font-size: 16px;
     min-height: 30px;
     padding: 0px 3px;
-    color: white;
 }
 
 .modules-left {
     padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .modules-right {
     padding-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #waybar {
-    background: rgba(25, 25, 25,0.95);
+    background: #222222;
 }
 
 #custom-separator {
     padding: 0px 0px;
+    margin: 0px 5px;
 }
 
-#workspaces {
-    padding-right: 10px;
-}
+
 
 #workspaces button {
-    margin: 0px 4px;
+    margin: 0px 1px;
     background: transparent;
     color: white;
-    min-width: 25px;
-    border-radius: 5px;
+    min-width: 30px;
+    border-radius: 15px;
 }
 
 #workspaces button.focused {
-    background: #64727D;
+    background: #ffffff;
+    color: black;
 }
 
 #workspaces button:hover {
-    background: #454a4e;
+    background: #bbbbbb;
+    color: #333333;
 }
 
 #mode {
     background: #64727D;
 }
 
-#clock {
-    padding: 0px 5px;
-    margin: 0px 5px;
 
-    border-radius: 12px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #ffffff;
+
+
+
+
+
+/* Groups and single items */
+
+#cpu, #memory, #temperature {
+    background: #504040;
+    /*text-shadow: 2px 2px 2px #000000;*/
+}
+
+#disk.root, #disk.mirror {
+    background: #405040;
+}
+
+#network, #custom-pia-status {
+    background: #404050;
+}
+
+#idle_inhibitor, #pulseaudio, #tray {
+    background: #504050;
+}
+
+#workspaces {
+    background: #505050;
+}
+
+#clock {
+    background: #770000;
+    color: white;
+    font-size: 18px;
 }
 
 #custom-gamemode {
-    color: #7fff43;
+    background: #61d42c;
+    color: black;
+}
+
+#custom-checkdots {
+    /*color: #00c3ff*/
+    background: #666666;
+    animation: pulse-dots 2s alternate linear infinite;
+}
+
+#custom-checkupdate {
+    animation: pulse-updates 2s alternate linear infinite;
 }
 
 #custom-windows-status {
-    color: #0db2ff;
+    background: #0db2ff;
 }
 
-#cpu {
-    color: #79ff79
+/* Right Sides */
+
+#temperature, #disk.mirror, window.eDP-1 #disk.root, #custom-pia-status, 
+#tray, #clock, #custom-checkdots, #custom-checkupdate, #workspaces, #custom-media, 
+#mode, #custom-gamemode, #custom-windows-status {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-right: 10px;
+    margin-right: 5px;
 }
 
-#memory {
-    color: #ff7b7b
+/* Left Sides */
+
+#cpu, #disk.root, #network, #pulseaudio, #clock, #custom-checkdots, #custom-checkupdate, 
+#workspaces, #custom-media, #mode, #custom-gamemode, #custom-windows-status {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 10px;
+    margin-left: 5px;
 }
 
-#temperature {
-    color: #7cc0ff
-}
+/* Other settings */
 
 #battery.warning {
 	color: yellow;
@@ -89,15 +140,15 @@
 	color: red;
 }
 
-#disk.warning, #disk.mirror.warning {
+#disk.root.warning, #disk.mirror.warning {
     color: yellow;
 }
 
-#disk.high, #disk.mirror.high {
+#disk.root.high, #disk.mirror.high {
     color: orange;
 }
 
-#disk.critical, #disk.mirror.critical {
+#disk.root.critical, #disk.mirror.critical {
     color: red;
 }
 
@@ -105,18 +156,34 @@
     color: #ff0000;
 }
 
-#custom-checkupdate {
-    color: #ffa600
-}
 
-#custom-checkdots {
-    color: #00c3ff
-}
+
+
 
 @keyframes blink {
     to {
         background-color: #ffffff;
         color: black;
+    }
+}
+
+@keyframes pulse-dots {
+    from {
+        background: #00c3ff;
+    }
+
+    to {
+        background: #0084ac;
+    }
+}
+
+@keyframes pulse-updates {
+    from {
+        background: #ffa600;
+    }
+
+    to {
+        background: #b97900;
     }
 }
 
