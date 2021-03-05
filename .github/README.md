@@ -15,7 +15,6 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 - [piavpn-bin](https://aur.archlinux.org/packages/piavpn-bin/)<sup>AUR</sup>
 - [gamemode](https://archlinux.org/packages/community/x86_64/gamemode/)
 - [mangohud](https://aur.archlinux.org/packages/mangohud/)<sup>AUR</sup>
-- [plexamp-appimage](https://aur.archlinux.org/packages/plexamp-appimage/)<sup>AUR</sup>
 - [networkmanager](https://archlinux.org/packages/extra/x86_64/networkmanager/)
 - [blueberry](https://archlinux.org/packages/community/any/blueberry/)
 - [pipewire](https://archlinux.org/packages/extra/x86_64/pipewire/)
