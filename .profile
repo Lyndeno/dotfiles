@@ -3,7 +3,6 @@
 export _JAVA_AWT_WM_NONREPARENTING=1
 export MOZ_ENABLE_WAYLAND=1
 export XDG_CURRENT_DESKTOP=sway
-export SPOTIFYD_CLIENT_ID=a288d643e27c442da477624b7c5a57b4
 
 # Default applications
 export EDITOR=vim

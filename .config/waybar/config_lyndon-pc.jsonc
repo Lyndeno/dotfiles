@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["disk#root", "disk#mirror", "custom/gamemode", "custom/windows-status","cpu", "memory", "temperature", "network", "custom/pia-status", "clock", "custom/checkdots", "custom/checkupdate", "pulseaudio", "idle_inhibitor", "tray"],
+    "modules-right": ["disk", "disk#mirror", "custom/separator", "custom/gamemode", "custom/windows-status","cpu", "memory", "temperature", "custom/separator", "network", "custom/pia-status", "clock", "custom/checkdots", "custom/checkupdate", "pulseaudio", "idle_inhibitor", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -34,7 +34,7 @@
             "deactivated": ""
         }
     },
-    "disk#root": {
+    "disk": {
 	"interval": 30,
 	"format": " {percentage_used}%",
 	"path": "/",
@@ -72,7 +72,7 @@
 	"on-click": "alacritty -e btm --default_widget_type cpu"
     },
     "memory": {
-        "format": " {used:0.1f}G({percentage}%)",
+        "format": " {used:0.1f}G ({percentage}%)",
 	"interval": 3,
     "on-click": "alacritty -e btm --default_widget_type mem"
     },
@@ -136,7 +136,7 @@
         //"exec": "$HOME/.config/waybar/scripts/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/separator": {
-	"format": "|",
+	"format": "",
 	"interval": "once",
 	"tooltip": false
     },
@@ -155,18 +155,18 @@
         "signal": 2
     },
     "custom/pia-status": {
-        "format": "{icon}{}",
+        "format": "{icon} {}",
         "interval": 3,
         "return-type": "json",
         "exec": "~/.local/bin/statusbar/sb-pia.sh",
         "format-icons": {
-            "Connected": " ",
+            "Connected": "",
             "Disconnected": "",
-            "Connecting": " ",
-            "Disconnecting": " ",
-            "Reconnecting": " ",
-            "Interrupted": " ",
-            "DisconnectingToReconnect": " "
+            "Connecting": "",
+            "Disconnecting": "",
+            "Reconnecting": "",
+            "Interrupted": "",
+            "DisconnectingToReconnect": ""
         },
         "on-click": "piactl connect &",
         "on-click-right": "piactl disconnect &"
