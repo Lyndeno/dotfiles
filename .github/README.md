@@ -31,7 +31,7 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 
 - [alacritty](https://archlinux.org/packages/community/x86_64/alacritty/)
 - [fish](https://archlinux.org/packages/community/x86_64/fish/)
-  - [starship](https://aur.archlinux.org/packages/starship/)<sup>AUR</sup>
+  - [starship](https://archlinux.org/packages/community/x86_64/starship/)
 - [exa](https://archlinux.org/packages/community/x86_64/exa/)
 - [bat](https://archlinux.org/packages/community/x86_64/bat/)
 - [pueue](https://aur.archlinux.org/packages/pueue/)<sup>AUR</sup>
