@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media", "sway/window"],
     //"modules-center": ["sway/window"],
-    "modules-right": ["disk", "custom/separator", "custom/gamemode","cpu", "memory", "temperature", "custom/separator", "network", "custom/pia-status", "custom/separator", "battery", "backlight", "clock", "custom/checkdots", "custom/checkupdate", "pulseaudio", "idle_inhibitor", "tray"],
+    "modules-right": ["disk#root", "custom/gamemode","cpu", "memory", "temperature", "network", "custom/pia-status", "battery", "backlight", "clock", "custom/checkdots", "custom/checkupdate", "pulseaudio", "idle_inhibitor", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -45,7 +45,7 @@
             "deactivated": ""
         }
     },
-    "disk": {
+    "disk#root": {
 	"interval": 30,
 	"format": " {percentage_used}%",
     "path": "/",
@@ -152,18 +152,18 @@
         "signal": 2
     },
     "custom/pia-status": {
-        "format": "{icon} {}",
+        "format": "{icon}{}",
         "interval": 3,
         "return-type": "json",
         "exec": "~/.local/bin/statusbar/sb-pia.sh",
         "format-icons": {
-            "Connected": "",
+            "Connected": " ",
             "Disconnected": "",
-            "Connecting": "",
-            "Disconnecting": "",
-            "Reconnecting": "",
-            "Interrupted": "",
-            "DisconnectingToReconnect": ""
+            "Connecting": " ",
+            "Disconnecting": " ",
+            "Reconnecting": " ",
+            "Interrupted": " ",
+            "DisconnectingToReconnect": " "
         },
         "on-click": "piactl connect &",
         "on-click-right": "piactl disconnect &"
