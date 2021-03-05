@@ -140,15 +140,15 @@
 	color: red;
 }
 
-#disk.warning, #disk.mirror.warning {
+#disk.root.warning, #disk.mirror.warning {
     color: yellow;
 }
 
-#disk.high, #disk.mirror.high {
+#disk.root.high, #disk.mirror.high {
     color: orange;
 }
 
-#disk.critical, #disk.mirror.critical {
+#disk.root.critical, #disk.mirror.critical {
     color: red;
 }
 
