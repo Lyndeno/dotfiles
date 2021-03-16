@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media", "sway/window"],
     //"modules-center": ["sway/window"],
-    "modules-right": ["disk#root", "custom/gamemode","cpu", "memory", "temperature", "network", "custom/pia-status", "battery", "backlight", "clock", "custom/checkdots", "custom/checkupdate", "pulseaudio", "idle_inhibitor", "tray"],
+    "modules-right": ["disk#xpsroot", "custom/gamemode","cpu", "memory", "temperature", "network", "custom/pia-status", "battery", "backlight", "clock", "custom/checkdots", "custom/checkupdate", "pulseaudio", "idle_inhibitor", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -45,7 +45,7 @@
             "deactivated": ""
         }
     },
-    "disk#root": {
+    "disk#xpsroot": {
 	"interval": 30,
 	"format": " {percentage_free}%",
     "path": "/",

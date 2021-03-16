@@ -68,7 +68,7 @@
     /*text-shadow: 2px 2px 2px #000000;*/
 }
 
-#disk.root, #disk.mirror {
+#disk.root, #disk.xpsroot, #disk.mirror {
     background: #405040;
 }
 
@@ -111,7 +111,7 @@
 
 /* Right Sides */
 
-#temperature, #disk.mirror, window.eDP-1 #disk.root, #custom-pia-status, 
+#temperature, #disk.mirror, #disk.xpsroot, #custom-pia-status, 
 #tray, #clock, #custom-checkdots, #custom-checkupdate, #workspaces, #custom-media, 
 #mode, #custom-gamemode, #custom-windows-status {
     border-top-right-radius: 15px;
@@ -122,7 +122,7 @@
 
 /* Left Sides */
 
-#cpu, #disk.root, #network, #pulseaudio, #clock, #custom-checkdots, #custom-checkupdate, 
+#cpu, #disk.root, #disk.xpsroot, #network, #pulseaudio, #clock, #custom-checkdots, #custom-checkupdate, 
 #workspaces, #custom-media, #mode, #custom-gamemode, #custom-windows-status {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
