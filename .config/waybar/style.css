@@ -113,7 +113,7 @@
 
 #temperature, #disk.mirror, #disk.xpsroot, #custom-pia-status, 
 #tray, #clock, #custom-checkdots, #custom-checkupdate, #workspaces, #custom-media, 
-#mode, #custom-gamemode, #custom-windows-status {
+#mode, #custom-gamemode, #custom-windows-status, #memory.xps {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     padding-right: 10px;
