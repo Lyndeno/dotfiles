@@ -1,16 +1,12 @@
 # Display
 output eDP-1 enable mode 1920x1080@59.933998Hz
 
-# Workspaces
-workspace 1 output "Goldstar Company Ltd LG QHD 0x00002B23"
-workspace 2 output "Goldstar Company Ltd LG QHD 0x00002B23"
-workspace 3 output "Goldstar Company Ltd LG QHD 0x00002B23"
-workspace 4 output "Goldstar Company Ltd LG QHD 0x00002B23"
-workspace 5 output "Goldstar Company Ltd LG QHD 0x00002B23"
-
 # Input devices
 input type:touchpad {
 	tap enabled
 	natural_scroll enabled
 	scroll_factor 0.2
 }
+
+# enable automatic display configuration
+exec kanshi

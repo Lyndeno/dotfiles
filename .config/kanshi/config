@@ -1,0 +1,18 @@
+profile {
+    output eDP-1 scale 1 position 0,0
+    exec ~/.local/bin/mv-workspace.sh eDP-1 1 2 3 4 5 6 7 8 9 10
+}
+
+profile {
+    output "Goldstar Company Ltd LG QHD 0x00002B23" mode 2560x1440@99.945999Hz position 0,0
+    output eDP-1 scale 1.25 position 2560,500
+    exec ~/.local/bin/mv-workspace.sh "'Goldstar Company Ltd LG QHD 0x00002B23'" 1 2 3 4 5
+    exec ~/.local/bin/mv-workspace.sh eDP-1 6 7 8 9 10
+}
+
+profile {
+    output eDP-1 scale 1 position 0,0
+    output "Unknown ASUS MB16AC J6LMTF097058" scale 1 mode 1920x1080@60.000000Hz position 1920,0
+    exec ~/.local/bin/mv-workspace.sh eDP-1 1 2 3 4 5
+    exec ~/.local/bin/mv-workspace.sh "Unknown ASUS MB16AC J6LMTF097058" 6 7 8 9 10
+}
