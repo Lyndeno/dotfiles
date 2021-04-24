@@ -22,6 +22,8 @@ include ~/.config/sway/`hostname`.conf.d/idle
 # bar
 exec_always 'pkill waybar; waybar -c ~/.config/waybar/config_`hostname`.jsonc'
 
+workspace_auto_back_and_forth yes
+
 ### Includes
 
 # Bindings
