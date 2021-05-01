@@ -47,7 +47,7 @@ bindsym print exec --no-startup-id slurp | grim -g - - | wl-copy && wl-paste > ~
 bindsym $mod+print exec --no-startup-id grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy && wl-paste > ~/Pictures/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
 
 # Power
-bindsym $mod+Shift+Escape exec swaynag custom -m "What would you like to do?" -Z "Power Off" "poweroff" "Restart" "reboot"
+bindsym $mod+Shift+Escape exec swaynag custom -m "What would you like to do?" -Z "Power Off" "poweroff" -Z "Restart" "reboot"
 
 #
 # Moving around:
