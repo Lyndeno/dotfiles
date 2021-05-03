@@ -96,13 +96,11 @@
 }
 
 #custom-checkdots {
-    /*color: #00c3ff*/
-    background: #666666;
-    animation: pulse-dots 2s alternate linear infinite;
+    background: #00c3ff;
 }
 
 #custom-checkupdate {
-    animation: pulse-updates 2s alternate linear infinite;
+    background: #ffa600;
 }
 
 #custom-windows-status {
@@ -156,34 +154,10 @@
     color: #ff0000;
 }
 
-
-
-
-
 @keyframes blink {
     to {
         background-color: #ffffff;
         color: black;
-    }
-}
-
-@keyframes pulse-dots {
-    from {
-        background: #00c3ff;
-    }
-
-    to {
-        background: #0084ac;
-    }
-}
-
-@keyframes pulse-updates {
-    from {
-        background: #ffa600;
-    }
-
-    to {
-        background: #b97900;
     }
 }
 
