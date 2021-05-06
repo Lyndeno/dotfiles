@@ -162,19 +162,19 @@
 }
 
 /* Secondary monitor specific options*/
-window.DP-2 * {
+window.DP-3 * {
     padding: 0;
 }
 
-window.DP-2 #window {
+window.DP-3 #window {
     padding: 0px;
 }
 
-window.DP-2 #workspaces {
+window.DP-3 #workspaces {
     padding: 0px;
 }
 
-window.DP-2 #clock {
+window.DP-3 #clock {
     background-color: transparent;
     color: #ffffff;
     padding: 0px;
@@ -182,6 +182,6 @@ window.DP-2 #clock {
     border-style: none;
 }
 
-window.DP-2 #workspaces {
+window.DP-3 #workspaces {
     padding-left: 0px;
 }
