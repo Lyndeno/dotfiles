@@ -4,9 +4,9 @@ alias ssys='sudo systemctl'
 alias cat='bat'
 alias ls='exa --icons --group-directories-first -B'
 
-function code
-	/bin/code $argv --disable-frame-rate-limit
-end
+#function code
+#	/bin/code $argv --disable-frame-rate-limit
+#end
 
 function paru
 	/bin/paru $argv ; pkill -RTMIN+1 waybar
