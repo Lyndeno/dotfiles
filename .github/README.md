@@ -36,6 +36,7 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 - [bat](https://archlinux.org/packages/community/x86_64/bat/)
 - [pueue](https://archlinux.org/packages/community/x86_64/pueue/)
 - [bottom](https://aur.archlinux.org/packages/bottom/)<sup>AUR</sup>
+- [jq]()
 
 ### VM Stuff
 
