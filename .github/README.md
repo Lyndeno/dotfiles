@@ -26,6 +26,8 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 - [element-desktop](https://archlinux.org/packages/community/x86_64/element-desktop/)
 - [gammastep](https://archlinux.org/packages/community/x86_64/gammastep/)
 - [steam](https://archlinux.org/packages/multilib/x86_64/steam/)<sup>multilib</sup>
+- [otf-cascadia-code]()
+- [ttf-nerd-fonts-symbols]()
 
 ### Terminal
 
@@ -44,7 +46,8 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 ### VM Stuff
 
 - [libvirt](https://archlinux.org/packages/community/x86_64/libvirt/)
-- [ebtables](https://archlinux.org/packages/extra/x86_64/ebtables/)
+- [iptables-nft]()
+- [dns-masq]()
 - [bridge-utils](https://archlinux.org/packages/extra/x86_64/bridge-utils/)
 - [openbsd-netcat](https://archlinux.org/packages/community/x86_64/openbsd-netcat/)
 - [edk2-ovmf](https://archlinux.org/packages/extra/any/edk2-ovmf/)
