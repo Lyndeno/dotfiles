@@ -28,6 +28,9 @@ These are my personal dotfiles for my laptop and desktop. These dotfiles are con
 - [steam](https://archlinux.org/packages/multilib/x86_64/steam/)<sup>multilib</sup>
 - [otf-cascadia-code]()
 - [ttf-nerd-fonts-symbols]()
+- [papirus-icon-theme]()
+- [capitaine-cursors]()
+- [polkit-gnome]()
 
 ### Terminal
 
