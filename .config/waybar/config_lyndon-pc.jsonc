@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["disk#root", "disk#mirror", "custom/gamemode", "custom/windows-status","cpu", "memory", "temperature", "network", "custom/pia-status", "clock", "custom/checkdots", "custom/checkupdate", "pulseaudio", "idle_inhibitor", "tray"],
+    "modules-right": ["disk#root", "disk#mirror", "custom/gamemode","cpu", "memory", "temperature", "network", "custom/pia-status", "clock", "custom/checkdots", "custom/checkupdate", "pulseaudio", "idle_inhibitor", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
