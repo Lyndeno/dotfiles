@@ -63,7 +63,7 @@
 
 /* Groups and single items */
 
-#cpu, #memory, #temperature {
+#cpu, #memory {
     background: #504040;
     /*text-shadow: 2px 2px 2px #000000;*/
 }
@@ -103,15 +103,11 @@
     background: #ffa600;
 }
 
-#custom-windows-status {
-    background: #0db2ff;
-}
-
 /* Right Sides */
 
-#temperature, #disk.mirror, #disk.xpsroot, #custom-pia-status, 
+#disk.mirror, #disk.xpsroot, #custom-pia-status, 
 #tray, #clock, #custom-checkdots, #custom-checkupdate, #workspaces, #custom-media, 
-#mode, #custom-gamemode, #custom-windows-status, #memory.xps {
+#mode, #custom-gamemode, #memory, #memory.xps {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     padding-right: 10px;
@@ -121,7 +117,7 @@
 /* Left Sides */
 
 #cpu, #disk.root, #disk.xpsroot, #network, #pulseaudio, #clock, #custom-checkdots, #custom-checkupdate, 
-#workspaces, #custom-media, #mode, #custom-gamemode, #custom-windows-status {
+#workspaces, #custom-media, #mode, #custom-gamemode {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding-left: 10px;
