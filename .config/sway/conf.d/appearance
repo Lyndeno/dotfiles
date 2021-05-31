@@ -10,6 +10,6 @@ smart_gaps on
 smart_borders on
 
 # application themes and cursors
-#exec_always gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
-#exec_always gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors'
-#exec_always gsettings set org.gnome.desktop.interface gtk-theme 'Plata-Noir'
+exec_always gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+exec_always gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors'
+exec_always gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'
