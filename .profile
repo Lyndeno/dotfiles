@@ -13,3 +13,4 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export PATH="$PATH:$HOME/.esp/xtensa-lx106-elf/bin"
 export PATH="$PATH:$HOME/.local/bin"
 export IDF_PATH=~/.esp/ESP8266_RTOS_SDK
+. "$HOME/.cargo/env"
