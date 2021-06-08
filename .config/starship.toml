@@ -2,15 +2,15 @@ add_newline = false
 
 # Custom Format
 format = """
-$directory
-$battery$jobs$username$hostname$memory_usage$git_branch$git_status$rust$cmake$cmd_duration$character"""
+$username$hostname$directory
+$battery$jobs$memory_usage$git_branch$git_status$rust$cmake$cmd_duration$character"""
 
 [cmd_duration]
 min_time = 10000
 format = "[$duration]($style) "
 
 [hostname]
-format = "on [$hostname](bold yellow) "
+format = "@[$hostname](bold yellow):"
 
 [directory]
 truncation_symbol = ".../"
@@ -42,5 +42,5 @@ threshold = 50
 style = "fg:#666666"
 
 [username]
-format = "[$user]($style) "
+format = "[$user]($style)"
 style_user = "bold green"
