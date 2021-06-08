@@ -17,7 +17,7 @@ truncation_symbol = ".../"
 truncation_length = 5
 
 [memory_usage]
-disabled = false
+disabled = true
 threshold = 50
 
 [git_branch]
