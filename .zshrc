@@ -1,6 +1,10 @@
 autoload -Uz compinit
 compinit
 
+### Aliases ###
+alias cat="bat"
+alias ls="exa --icons --group-directories-first -B"
+
 if [[ "Lyndons-Mac-mini.local" == "$(hostname)" ]]
 then
 	source /opt/homebrew/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
