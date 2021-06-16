@@ -23,13 +23,19 @@ Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 Plug 'vim-syntastic/syntastic'
 Plug 'rust-lang/rust.vim'
+Plug 'ap/vim-css-color'
 call plug#end()
 
 " statusline configuration
 set laststatus=2
 
+" misc config
+set number
+set relativenumber
+
 set t_Co=256
 set mouse=nicr
+
 
 let g:lightline = {
 	\ 'colorscheme': 'wombat',
