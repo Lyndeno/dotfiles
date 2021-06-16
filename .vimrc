@@ -23,6 +23,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 Plug 'vim-syntastic/syntastic'
 Plug 'rust-lang/rust.vim'
+Plug 'ap/vim-css-color'
 call plug#end()
 
 " statusline configuration
