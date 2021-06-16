@@ -5,7 +5,7 @@ set $mod Mod4
 set $default_gap 20
 
 # Your preferred terminal emulator
-set $term alacritty -e fish
+set $term alacritty
 
 # Your preferred application launcher
 set $menu wofi
