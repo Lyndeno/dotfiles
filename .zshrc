@@ -5,12 +5,17 @@ compinit
 alias cat="bat"
 alias ls="exa --icons --group-directories-first -B"
 
-#HISTFILE=~/.cache/zsh/histfile
-#HISTSIZE=5000
-#SAVEHIST=5000
-#setopt appendhistory
-#setopt sharehistory
-#setopt incappendhistory
+if [ ! -d ~/.cache/zsh ]
+then
+	mkdir -p ~/.cache/zsh
+fi
+
+HISTFILE=~/.cache/zsh/histfile
+HISTSIZE=5000
+SAVEHIST=5000
+setopt appendhistory
+setopt sharehistory
+setopt incappendhistory
 
 if [[ "Lyndons-Mac-mini.local" == "$(hostname)" ]]
 then
