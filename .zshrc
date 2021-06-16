@@ -5,6 +5,13 @@ compinit
 alias cat="bat"
 alias ls="exa --icons --group-directories-first -B"
 
+#HISTFILE=~/.cache/zsh/histfile
+#HISTSIZE=5000
+#SAVEHIST=5000
+#setopt appendhistory
+#setopt sharehistory
+#setopt incappendhistory
+
 if [[ "Lyndons-Mac-mini.local" == "$(hostname)" ]]
 then
 	source /opt/homebrew/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
