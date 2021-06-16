@@ -29,8 +29,13 @@ call plug#end()
 " statusline configuration
 set laststatus=2
 
+" misc config
+set number
+set relativenumber
+
 set t_Co=256
 set mouse=nicr
+
 
 let g:lightline = {
 	\ 'colorscheme': 'wombat',
