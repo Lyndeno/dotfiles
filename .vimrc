@@ -5,6 +5,15 @@ set hlsearch
 set ignorecase
 set incsearch
 set noshowmode
+set encoding=utf-8
+set hidden
+set nobackup
+set nowritebackup
+set cmdheight=1
+
+set updatetime=300
+set shortmess+=c
+
 filetype plugin indent on
 
 " Auto-install plugin manager
@@ -24,7 +33,21 @@ Plug 'preservim/nerdtree'
 Plug 'vim-syntastic/syntastic'
 Plug 'rust-lang/rust.vim'
 Plug 'ap/vim-css-color'
+Plug 'neoclide/coc.nvim'
 call plug#end()
+
+inoremap <silent><expr> <TAB>
+	\ pumvisible() ? "\<C-n>" :
+	\ <SID>check_back_space() ? "\<TAB>" :
+	\ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+	let col = col('.') - 1
+	return !col || getline('.')[col - 1] =~# '\s'
+endfunction
+
+inoremap <silent><expr> <c-@> coc#refresh()
 
 " statusline configuration
 set laststatus=2
