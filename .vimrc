@@ -34,6 +34,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'rust-lang/rust.vim'
 Plug 'ap/vim-css-color'
 Plug 'neoclide/coc.nvim'
+Plug 'tmsvg/pear-tree'
 call plug#end()
 
 inoremap <silent><expr> <TAB>
