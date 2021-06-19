@@ -1,6 +1,8 @@
 autoload -Uz compinit
 compinit
 
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
 ### Aliases ###
 alias cat="bat"
 alias ls="exa --icons --group-directories-first -B"
