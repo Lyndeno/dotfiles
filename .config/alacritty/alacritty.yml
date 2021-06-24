@@ -32,10 +32,4 @@ colors:
     cyan:    '#33c7de'
     white:   '#ffffff'
 
-window:
-  padding:
-    x: 24
-    y: 24
-  dynamic_padding: true
-
 background_opacity: 0.95
