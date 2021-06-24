@@ -31,7 +31,7 @@ format = "[$symbol$branch]($style) "
 symbol = " "
 
 [battery]
-format = "[$symbol $percentage]($style) "
+format = "[$symbol$percentage]($style) "
 
 [[battery.display]]
 threshold = 15
