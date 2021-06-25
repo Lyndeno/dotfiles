@@ -41,6 +41,10 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 call plug#end()
 
+" Manage coc extensions here:
+let g:coc_global_extensions = ['coc-cmake', 'coc-json']
+
+" Turn on bracket pair colours
 let g:rainbow_active = 1
 
 " theme
