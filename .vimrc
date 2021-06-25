@@ -36,6 +36,9 @@ Plug 'ap/vim-css-color'
 Plug 'neoclide/coc.nvim'
 Plug 'tmsvg/pear-tree'
 Plug 'cespare/vim-toml'
+Plug 'luochen1990/rainbow'
+Plug 'nanotech/jellybeans.vim'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 call plug#end()
 
 set signcolumn=number
