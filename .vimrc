@@ -46,6 +46,12 @@ let g:coc_global_extensions = ['coc-cmake', 'coc-json']
 
 " Turn on bracket pair colours
 let g:rainbow_active = 1
+" Rainbow plugin has bugs with cmake, turn it off for cmake
+let g:rainbow_conf = {
+\   'separately': {
+\       'cmake': 0,
+\    }
+\}
 
 " theme
 set t_Co=256
