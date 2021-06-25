@@ -41,6 +41,16 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 call plug#end()
 
+let g:rainbow_active = 1
+
+" theme
+set t_Co=256
+colorscheme jellybeans
+hi Normal guibg=NONE ctermbg=NONE
+hi NonText guibg=NONE ctermbg=NONE
+hi CursorLineNr guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+
 set signcolumn=number
 
 inoremap <silent><expr> <TAB>
