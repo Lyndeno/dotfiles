@@ -34,16 +34,16 @@
 
 
 #workspaces button {
-    margin: 0px 1px;
-    background: transparent;
-    color: white;
-    min-width: 30px;
+    margin: 0px 0px;
+    background: #444444;
+    color: #cccccc;
+    min-width: 20px;
     /*border-radius: 15px;*/
 }
 
 #workspaces button.focused {
-    background: #ffffff;
-    color: black;
+    background: #666666;
+    color: white;
 }
 
 #workspaces button:hover {
