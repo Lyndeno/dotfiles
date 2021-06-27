@@ -11,13 +11,13 @@
 }
 
 .modules-left {
-    padding-left: 20px;
+    padding-left: 6px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 .modules-right {
-    padding-right: 20px;
+    padding-right: 6px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -145,7 +145,7 @@
 }
 
 /* Secondary monitor specific options*/
-window.DP-2 * {
+/*window.DP-2 * {
     padding: 0;
 }
 
@@ -167,4 +167,4 @@ window.DP-2 #clock {
 
 window.DP-2 #workspaces {
     padding-left: 0px;
-}
+}*/

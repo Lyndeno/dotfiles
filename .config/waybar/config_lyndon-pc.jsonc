@@ -170,19 +170,19 @@
 },
 {
     "output": "DP-2",
-    "position": "left", // Waybar position (top|bottom|left|right)
+    "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 10, // Waybar height (to be removed for auto height)
-    "modules-left": ["sway/workspaces"],
-    "modules-center": ["sway/window"],
+    "modules-left": ["sway/workspaces", "sway/window"],
+    //"modules-center": ["sway/window"],
     "modules-right": ["clock"],
-    "sway/window": {
-	"rotate": 90
-    },
+    //"sway/window": {
+    //	"rotate": 90
+    //},
     "clock": {
 	"interval": 15,
         // "timezone": "America/Edmonton",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%I%n%M}",
+        "format": "{:%I:%M}",
         "format-alt": "{:%Y-%m-%d}"
     }
 }
