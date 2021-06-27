@@ -1,9 +1,10 @@
 default-timeout=10000
 font=Cascadia Code 12, Symbols Nerd Font 12
-border-size=3
+border-size=2
 border-color=#aa1111ff
 background-color=#191919F3
 progress-color=#999999FF
 layer=overlay
 border-radius=5
 group-by=summary
+anchor=bottom-right
