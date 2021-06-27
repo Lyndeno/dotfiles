@@ -2,7 +2,7 @@
     // "layer": "top", // Waybar at top layer
     "output": "DP-1",
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
+    "height": 10, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
@@ -171,7 +171,7 @@
 {
     "output": "DP-2",
     "position": "left", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
+    "height": 10, // Waybar height (to be removed for auto height)
     "modules-left": ["sway/workspaces"],
     "modules-center": ["sway/window"],
     "modules-right": ["clock"],
