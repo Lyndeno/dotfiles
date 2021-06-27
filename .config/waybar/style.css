@@ -61,40 +61,16 @@
     color: #ff5555;
 }
 
-#cpu {
-	margin-left: 4px;
-}
-
-#memory {
-	margin-right: 4px;
-}
-
 #disk.root, #disk.xpsroot, #disk.mirror {
     color: #55ff55;
-}
-
-#disk.xpsroot {
-	margin-right: 4px;
 }
 
 #network, #custom-pia-status {
     color: #aaaaaa;
 }
 
-#network {
-	margin-left: 4px;
-}
-
-#custom-pia-status {
-	margin-right: 4px;
-}
-
 #idle_inhibitor, #pulseaudio, #tray {
     color: #bbbbbb;
-}
-
-#pulseaudio {
-	margin-left: 4px;
 }
 
 #workspaces {
@@ -104,8 +80,6 @@
 #clock {
     color: white;
     font-size: 16px;
-    margin-right: 4px;
-    margin-left: 4px;
 }
 
 #custom-gamemode {
@@ -121,15 +95,23 @@
     color: #ffa600;
 }
 
+/* Right Side */
+#disk.mirror, #disk.xpsroot, #custom-pia-status, 
+#tray, #clock, #custom-checkdots, #custom-checkupdate, #workspaces, #custom-media, 
+#mode, #custom-gamemode, #memory, #memory.xps, #backlight {
+	margin-right: 5px;
+}
+
+/* Left Sides */
+
+#cpu, #disk.root, #disk.xpsroot, #network, #pulseaudio, #clock, #custom-checkdots, #custom-checkupdate,
+#workspaces, #custom-media, #mode, #custom-gamemode, #battery {
+	margin-left: 5px;
+}
+
+
+
 /* Other settings */
-
-#battery {
-	margin-left: 4px;
-}
-
-#backlight {
-	margin-right: 4px;
-}
 
 #battery.warning {
 	color: yellow;
