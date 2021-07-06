@@ -11,6 +11,7 @@ set nobackup
 set nowritebackup
 set cmdheight=1
 set tabstop=4
+set shiftwidth=0 " default to tabstop"
 
 set updatetime=300
 set shortmess+=c
