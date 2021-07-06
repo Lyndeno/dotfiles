@@ -86,6 +86,9 @@ set relativenumber
 set t_Co=256
 set mouse=nicr
 
+" Custom Syntax Highlighting
+au BufNewFile,BufRead Jenkinsfile set re=0 " Not setting this shows an error for some reason
+au BufNewFile,BufRead Jenkinsfile set syntax=groovy " Jenkinsfile is groovy
 
 let g:lightline = {
 	\ 'colorscheme': 'wombat',
