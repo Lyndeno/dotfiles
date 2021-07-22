@@ -19,7 +19,7 @@ setopt appendhistory
 setopt sharehistory
 setopt incappendhistory
 
-if [[ "Lyndons-Mac-mini.local" == "$(hostname)" ]]
+if [[ "Darwin" == "$(uname)" ]]
 then
 	source /opt/homebrew/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 	source /opt/homebrew/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
