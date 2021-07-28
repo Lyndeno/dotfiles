@@ -41,6 +41,7 @@ Plug 'cespare/vim-toml'
 Plug 'luochen1990/rainbow'
 Plug 'nanotech/jellybeans.vim'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'dhruvasagar/vim-table-mode'
 call plug#end()
 
 " Manage coc extensions here:
