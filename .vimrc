@@ -63,6 +63,7 @@ hi Normal guibg=NONE ctermbg=NONE
 hi NonText guibg=NONE ctermbg=NONE
 hi CursorLineNr guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE ctermbg=NONE
+hi Todo cterm=none ctermfg=white ctermbg=red
 
 set signcolumn=number
 
