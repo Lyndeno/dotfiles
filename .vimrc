@@ -90,6 +90,11 @@ set relativenumber
 set t_Co=256
 set mouse=nicr
 
+" bindings
+" Quick tab switching
+nnoremap H gT
+nnoremap L gt
+
 " Custom Syntax Highlighting
 au BufNewFile,BufRead Jenkinsfile setlocal re=0 ft=groovy " Jenkinsfile is groovy
 
