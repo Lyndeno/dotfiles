@@ -36,4 +36,8 @@ else
 	source /usr/share/fzf/completion.zsh
 fi
 
+# History-substring-search bindings
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
 eval "$(starship init zsh)"
