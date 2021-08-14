@@ -20,7 +20,7 @@ setopt appendhistory
 setopt sharehistory
 setopt incappendhistory
 
-if [[ "Darwin" == "$(uname)" ]]
+if [[ "macOS" == $CONFIG_DISTRO ]]
 then
 	source /opt/homebrew/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 	source /opt/homebrew/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -32,7 +32,7 @@ else
 	source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 	source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 	source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-	if [[ "\"void\"" == $(cat /etc/os-release | grep NAME= | awk -F= '{print $2}' | head -n 1) ]]
+	if [[ "void" == $CONFIG_DISTRO ]]
 	then
 		source /usr/share/doc/fzf/key-bindings.zsh
 		source /usr/share/doc/fzf/completion.zsh
