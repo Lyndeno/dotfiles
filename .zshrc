@@ -32,8 +32,14 @@ else
 	source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 	source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 	source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-	source /usr/share/fzf/key-bindings.zsh
-	source /usr/share/fzf/completion.zsh
+	if [[ "\"void\"" == $(cat /etc/os-release | grep NAME= | awk -F= '{print $2}' | head -n 1) ]]
+	then
+		source /usr/share/doc/fzf/key-bindings.zsh
+		source /usr/share/doc/fzf/completion.zsh
+	else
+		source /usr/share/fzf/key-bindings.zsh
+		source /usr/share/fzf/completion.zsh
+	fi
 fi
 
 # History-substring-search bindings
