@@ -35,7 +35,7 @@ Plug 'preservim/nerdtree'
 "Plug 'vim-syntastic/syntastic'
 Plug 'rust-lang/rust.vim'
 Plug 'ap/vim-css-color'
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tmsvg/pear-tree'
 Plug 'cespare/vim-toml'
 Plug 'luochen1990/rainbow'
