@@ -46,6 +46,9 @@ else
 	fi
 fi
 
+# Binding for accepting suggestions
+bindkey '^ ' autosuggest-accept
+
 # History-substring-search bindings
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
