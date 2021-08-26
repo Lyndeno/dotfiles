@@ -48,6 +48,7 @@ fi
 
 # Autosuggest based on history and command completions
 ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 # Binding for accepting suggestions
 bindkey '^ ' autosuggest-accept
