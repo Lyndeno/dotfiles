@@ -47,7 +47,7 @@ else
 fi
 
 # Autosuggest based on history and command completions
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
 
 # Binding for accepting suggestions
 bindkey '^ ' autosuggest-accept
