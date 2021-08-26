@@ -48,7 +48,9 @@ fi
 
 # Autosuggest based on history and command completions
 ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+typeset -A ZSH_HIGHLIGHT_PATTERNS
+ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
 
 # Binding for accepting suggestions
 bindkey '^ ' autosuggest-accept
