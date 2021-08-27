@@ -2,10 +2,10 @@ if type brew &>/dev/null; then
 	FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
 
+# Arch already has this in fpath
 if [[ "macOS" == $CONFIG_DISTRO ]]
 then
 	fpath=(/opt/homebrew/share/zsh-completions $fpath)
-else
 fi
 
 autoload -Uz compinit
