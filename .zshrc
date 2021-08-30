@@ -29,6 +29,7 @@ SAVEHIST=5000
 setopt appendhistory
 setopt sharehistory
 setopt incappendhistory
+setopt histignoredups
 
 if [[ "macOS" == $CONFIG_DISTRO ]]
 then
