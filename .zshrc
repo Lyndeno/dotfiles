@@ -8,6 +8,7 @@ then
 	fpath=(/opt/homebrew/share/zsh-completions $fpath)
 fi
 
+zmodload zsh/complist
 autoload -Uz compinit
 compinit
 
@@ -22,6 +23,12 @@ if [ ! -d ~/.cache/zsh ]
 then
 	mkdir -p ~/.cache/zsh
 fi
+
+# Vim bindings for tab menu
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
 
 HISTFILE=~/.cache/zsh/histfile
 HISTSIZE=5000
