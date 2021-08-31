@@ -31,6 +31,13 @@ setopt sharehistory
 setopt incappendhistory
 setopt histignoredups
 
+# Directory Stack
+setopt AUTO_PUSHD
+setopt PUSHD_IGNORE_DUPS
+setopt PUSHD_SILENT
+alias d='dirs -v'
+for i ({1..9}) alias "$i"="cd +${i}"; unset i
+
 if [[ "macOS" == $CONFIG_DISTRO ]]
 then
 	source /opt/homebrew/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
