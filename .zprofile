@@ -29,5 +29,10 @@ export IDF_PATH=~/.esp/ESP8266_RTOS_SDK
 if [[ "macOS" == $CONFIG_DISTRO ]]
 then
 	eval "$(/opt/homebrew/bin/brew shellenv)"
+	export ANDROID_HOME=/opt/homebrew/share/android-commandlinetools
+	export PATH=$PATH:$ANDROID_HOME/emulator
+	export PATH=$PATH:$ANDROID_HOME/tools
+	export PATH=$PATH:$ANDROID_HOME/tools/bin
+	export PATH=$PATH:$ANDROID_HOME/platform-tools
 fi
 #. "$HOME/.cargo/env"
