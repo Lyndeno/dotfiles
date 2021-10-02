@@ -53,6 +53,7 @@ then
 	source /opt/homebrew/opt/fzf/shell/key-bindings.zsh
 	source /opt/homebrew/opt/fzf/shell/completion.zsh
 elif [[ "Debian GNU/Linux" == $CONFIG_DISTRO ]]
+then
 	source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 	source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 	#source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
