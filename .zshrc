@@ -52,7 +52,12 @@ then
 	source /opt/homebrew/opt/zsh-history-substring-search/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 	source /opt/homebrew/opt/fzf/shell/key-bindings.zsh
 	source /opt/homebrew/opt/fzf/shell/completion.zsh
-
+elif [[ "Debian GNU/Linux" == $CONFIG_DISTRO ]]
+	source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+	source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	#source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+	source /usr/share/doc/fzf/examples/key-bindings.zsh
+	source /usr/share/doc/fzf/examples/completion.zsh
 else
 	source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 	source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
