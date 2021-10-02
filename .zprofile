@@ -8,7 +8,7 @@ then
 	export CONFIG_DISTRO=macOS
 elif [[ "Linux" == $CONFIG_KERNEL ]]
 then
-	export CONFIG_DISTRO=$(cat /etc/os-release | grep NAME= | awk -F= '{print $2}' | head -n 1 | sed -e 's/\"//g')
+	export CONFIG_DISTRO=$(cat /etc/os-release | grep ^NAME= | awk -F= '{print $2}' | head -n 1 | sed -e 's/\"//g')
 fi
 
 
