@@ -42,6 +42,7 @@ Plug 'luochen1990/rainbow'
 Plug 'nanotech/jellybeans.vim'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'dyng/ctrlsf.vim'
 call plug#end()
 
 " Manage coc extensions here:
