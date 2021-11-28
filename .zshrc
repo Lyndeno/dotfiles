@@ -1,13 +1,5 @@
-if type brew &>/dev/null; then
-	FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-fi
-
-# Arch already has this in fpath
-if [[ "macOS" == $CONFIG_DISTRO ]]
-then
-	fpath=(/opt/homebrew/share/zsh-completions $fpath)
-fi
-
+prompt off
+export CONFIG_DISTRO=$(cat /etc/os-release | grep ^NAME= | awk -F= '{print $2}' | head -n 1 | sed -e 's/\"//g')
 zmodload zsh/complist
 autoload -Uz compinit
 compinit
@@ -45,20 +37,22 @@ setopt PUSHD_SILENT
 alias d='dirs -v'
 for i ({1..9}) alias "$i"="cd +${i}"; unset i
 
-if [[ "macOS" == $CONFIG_DISTRO ]]
-then
-	source /opt/homebrew/opt/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-	source /opt/homebrew/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-	source /opt/homebrew/opt/zsh-history-substring-search/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-	source /opt/homebrew/opt/fzf/shell/key-bindings.zsh
-	source /opt/homebrew/opt/fzf/shell/completion.zsh
-elif [[ "Debian GNU/Linux" == $CONFIG_DISTRO ]]
+if [[ "Debian GNU/Linux" == $CONFIG_DISTRO ]]
 then
 	source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 	source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 	#source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 	source /usr/share/doc/fzf/examples/key-bindings.zsh
 	source /usr/share/doc/fzf/examples/completion.zsh
+elif [[ "NixOS" == $CONFIG_DISTRO ]]
+then
+	# autosuggestions
+	# syntax
+	# history substring
+	if [ -n "${commands[fzf-share]}" ]; then
+		  source "$(fzf-share)/key-bindings.zsh"
+		  source "$(fzf-share)/completion.zsh"
+	fi
 else
 	source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 	source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
