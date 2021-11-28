@@ -1,5 +1,5 @@
 # Display
-output DP-1 enable adaptive_sync on pos 1600 0 mode 2560x1440@144.000000Hz
+output DP-1 enable adaptive_sync on pos 1920 0 mode 2560x1440@144.000000Hz
 output DP-2 enable pos 0 300
 
 # Workspaces
