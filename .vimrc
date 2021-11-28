@@ -45,6 +45,7 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'LnL7/vim-nix'
 call plug#end()
 
 " Manage coc extensions here:
