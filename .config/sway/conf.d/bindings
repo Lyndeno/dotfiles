@@ -8,6 +8,9 @@
     # Kill focused window
     bindsym $mod+Shift+q kill
 
+	# until I figure out why .desktop file for nautilus doesn't work
+	bindsym $mod+u exec nautilus
+
     # Start your launcher
     bindsym $mod+grave exec $menu
 

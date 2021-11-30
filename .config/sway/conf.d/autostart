@@ -1,3 +1,5 @@
+#exec dbus-daemon --session --address=unix:path=$XDG_RUNTIME_DIR/bus
+
 # Start geoclue
 exec /usr/lib/geoclue-2.0/demos/agent
 
