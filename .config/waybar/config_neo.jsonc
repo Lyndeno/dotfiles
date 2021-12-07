@@ -129,7 +129,7 @@
         },
         "escape": true,
 	    "on-click": "playerctl play-pause",
-        "exec": "~/.local/bin/statusbar/sb-media.py 2> /dev/null" // Script in resources folder
+        "exec": "nix-shell ~/.local/bin/statusbar/sb-media.nix --run ~/.local/bin/statusbar/sb-media.py 2> /dev/null" // Script in resources folder
         //"exec": "$HOME/.config/waybar/scripts/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/separator": {
