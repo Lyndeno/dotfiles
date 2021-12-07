@@ -77,7 +77,7 @@ ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
 bindkey '^ ' autosuggest-accept
 
 # History-substring-search bindings
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+#bindkey '^[[A' history-substring-search-up
+#bindkey '^[[B' history-substring-search-down
 
 eval "$(starship init zsh)"
