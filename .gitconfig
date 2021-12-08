@@ -1,0 +1,8 @@
+[user]
+	name = Lyndon Sanche
+	email = lsanche@lyndeno.ca
+	signingkey = 6F8E82F60C799B18
+[commit]
+	gpgsign = true
+[pull]
+	rebase = false
