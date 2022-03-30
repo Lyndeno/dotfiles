@@ -2,4 +2,4 @@
 VteTerminal, vte-terminal {
 	padding: 24px;
 }
-
+@import 'colors.css';
